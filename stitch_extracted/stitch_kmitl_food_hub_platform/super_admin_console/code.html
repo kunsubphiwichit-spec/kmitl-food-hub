@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+
+<html class="light" lang="th"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><title>KMITL Hub - Super Admin Console</title><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;family=Space+Grotesk:wght@500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "surface-tint": "#ad3300", "surface-container-high": "#e8e7f1", "on-surface-variant": "#5a4139", "on-secondary-fixed-variant": "#3f465c", "outline": "#8e7067", "primary": "#a93200", "tertiary-fixed-dim": "#93ccff", "on-tertiary-container": "#fdfcff", "surface-dim": "#dad9e3", "surface-container-low": "#f4f2fd", "surface-container": "#eeedf7", "inverse-surface": "#2f3038", "secondary-container": "#dae2fd", "secondary": "#565e74", "error": "#ba1a1a", "surface": "#fbf8ff", "outline-variant": "#e2bfb4", "primary-fixed-dim": "#ffb59e", "on-secondary-fixed": "#131b2e", "inverse-primary": "#ffb59e", "tertiary": "#006194", "secondary-fixed-dim": "#bec6e0", "tertiary-container": "#007bb9", "on-secondary-container": "#5c647a", "background": "#fbf8ff", "on-error-container": "#93000a", "primary-container": "#d1430a", "surface-variant": "#e3e1ec", "on-error": "#ffffff", "inverse-on-surface": "#f1effa", "on-tertiary-fixed-variant": "#004b73", "on-background": "#1a1b22", "on-tertiary-fixed": "#001d31", "on-primary-container": "#fffbff", "tertiary-fixed": "#cce5ff", "primary-fixed": "#ffdbd0", "secondary-fixed": "#dae2fd", "error-container": "#ffdad6", "surface-container-lowest": "#ffffff", "on-primary-fixed": "#3a0b00", "on-primary": "#ffffff", "on-tertiary": "#ffffff", "surface-bright": "#fbf8ff", "on-primary-fixed-variant": "#842500", "on-secondary": "#ffffff", "on-surface": "#1a1b22", "surface-container-highest": "#e3e1ec" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "gutter-desktop": "2rem", "space-xs": "0.25rem", "space-lg": "1.5rem", "space-sm": "0.5rem", "margin-tablet": "2rem", "space-xl": "2.5rem", "gutter": "1rem", "space-md": "1rem", "margin-desktop": "3rem", "margin": "1rem", "gutter-tablet": "1.5rem" }, "fontFamily": { "body-sm": [ "Inter" ], "display-xl": [ "Inter" ], "headline-lg-mobile": [ "Inter" ], "headline-md": [ "Inter" ], "label-md": [ "Space Grotesk" ], "body-lg": [ "Inter" ], "label-lg": [ "Space Grotesk" ], "headline-lg": [ "Inter" ], "headline-sm": [ "Inter" ], "label-sm": [ "Space Grotesk" ], "display-xl-mobile": [ "Inter" ], "body-md": [ "Inter" ] }, "fontSize": { "body-sm": [ "13px", { "lineHeight": "18px", "fontWeight": "400" } ], "display-xl": [ "56px", { "lineHeight": "64px", "letterSpacing": "-0.03em", "fontWeight": "800" } ], "headline-lg-mobile": [ "28px", { "lineHeight": "36px", "letterSpacing": "-0.02em", "fontWeight": "700" } ], "headline-md": [ "24px", { "lineHeight": "32px", "letterSpacing": "-0.015em", "fontWeight": "600" } ], "label-md": [ "12px", { "lineHeight": "16px", "letterSpacing": "0.04em", "fontWeight": "600" } ], "body-lg": [ "18px", { "lineHeight": "28px", "fontWeight": "400" } ], "label-lg": [ "14px", { "lineHeight": "20px", "letterSpacing": "0.02em", "fontWeight": "600" } ], "headline-lg": [ "36px", { "lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "700" } ], "headline-sm": [ "20px", { "lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "600" } ], "label-sm": [ "10px", { "lineHeight": "14px", "letterSpacing": "0.06em", "fontWeight": "700" } ], "display-xl-mobile": [ "38px", { "lineHeight": "44px", "letterSpacing": "-0.025em", "fontWeight": "800" } ], "body-md": [ "15px", { "lineHeight": "24px", "fontWeight": "400" } ] } } } };</script></head><body class="bg-background font-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-64 bg-surface-container-low z-50 flex flex-col pt-space-md pb-space-lg shadow-[1px_0_8px_rgba(0,0,0,0.03)]"><div class="px-space-md mb-space-lg flex items-center gap-space-sm"><img alt="KMITL Hub Logo" class="h-7 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1WfX8xYRJTl6jSCTUOKUKpaI1bxPH4WA8hswuriE0f87aHm3744qS4jX8ZkGqIJgsSxZZhtUu3LKBZ8Xwym5SlsO5AHZsFEU1DZTxxzWEAg5goTr7suI4dCU8pbJBxwKZ6v1cJpYa-Pcj3dt_nch8YB5lM5Mhn2sn5k84PBLWsMdYmeIbWpWUDCPikG1tZhsGKrHi1yCveZz6TtTfH0eil30mdUT3PssgbVX1_s333JBkbqQ52BMmh_BIJy"/><div class="flex flex-col"><span class="font-label-md text-label-md text-on-surface uppercase">Super Admin</span><span class="font-label-sm text-label-sm text-on-surface-variant">Zero Trust Platform</span></div></div><nav class="flex-1 px-space-sm flex flex-col gap-1" data-active-classes="bg-primary-container text-on-primary-container font-semibold"><a aria-current="page" class="flex items-center px-space-sm py-2 rounded transition-colors bg-primary-container text-on-primary-container font-semibold" data-path="super-admin-console" href="#"><span class="material-symbols-outlined mr-space-sm text-lg">dashboard</span>แผงควบคุมระบบ</a><a class="flex items-center px-space-sm py-2 rounded text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-label-md text-label-md" data-path="vendor-management" href="#"><span class="material-symbols-outlined mr-space-sm text-lg">storefront</span>จัดการร้านอาหาร</a><a class="flex items-center px-space-sm py-2 rounded text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-label-md text-label-md" data-path="ev-fleet-telematics" href="#"><span class="material-symbols-outlined mr-space-sm text-lg">directions_bus</span>จัดการรถรับส่ง EV</a><a class="flex items-center px-space-sm py-2 rounded text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-label-md text-label-md" data-path="security-access-audit" href="#"><span class="material-symbols-outlined mr-space-sm text-lg">policy</span>ตรวจสอบสิทธิ์ &amp; PDPA</a><a class="flex items-center px-space-sm py-2 rounded text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-label-md text-label-md mt-auto" data-path="home" href="#"><span class="material-symbols-outlined mr-space-sm text-lg">arrow_back</span>กลับสู่หน้าหลัก</a></nav></aside><div class="pl-64"><header class="fixed top-0 left-64 right-0 h-16 bg-surface/90 backdrop-blur-md shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 flex items-center justify-between px-gutter-desktop"><div class="flex items-center gap-space-sm"><span class="px-space-xs py-0.5 rounded bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm font-semibold uppercase">Console v2.4</span><span class="font-label-sm text-label-sm text-on-surface-variant">Environment: Production-TH</span></div><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-xs px-space-xs py-1 rounded-full bg-surface-container-low"><span class="w-2 h-2 rounded-full bg-tertiary animate-pulse"></span><span class="font-label-sm text-label-sm text-on-surface-variant">Zero Trust Active</span></div><span class="font-label-sm text-label-sm text-on-surface-variant hidden md:inline">kunsubphiwichit@gmail.com</span><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-1 ring-outline-variant" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBjc5kh26wOauIorvLa3R0sjDXCaNnSBN5TJm7IyIVLA2PrTrraORwuqeLRbaC-chaom_CHNH9mssveVjY5wtWGLFr4BN20W87aUn2Qm-HIgKLak2mgquXQvwdKajEZOjQ3SoXYVDQpC9kK5cAivfa9Z7Be4XfFXWvqlIc9nAtmmbXLvahFZZMsY4ZLHywjbcwoQJUFQw1ZDRmT9u3VVNnQvYdneiOZdKlDd8pzBh_NccL4EmItfmTgdA"/></div></header><main class="relative pt-16 bg-surface min-h-screen px-gutter-desktop py-space-lg"><div class="flex flex-col w-full gap-space-lg pb-space-xl">
+<!-- Security & Identity Verification Header -->
+<section class="relative overflow-hidden rounded-xl bg-surface-container-low p-space-lg shadow-sm">
+<div class="absolute -right-16 -top-16 h-64 w-64 rounded-full bg-primary/5 blur-3xl pointer-events-none"></div>
+<div class="absolute -left-20 -bottom-20 h-56 w-56 rounded-full bg-tertiary/5 blur-3xl pointer-events-none"></div>
+<div class="relative z-10 flex flex-col gap-space-md">
+<div class="flex flex-wrap items-center justify-between gap-space-sm pb-space-sm border-b-0">
+<div class="flex items-center gap-space-sm">
+<span class="flex h-3 w-3 relative">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
+<span class="relative inline-flex rounded-full h-3 w-3 bg-primary"></span>
+</span>
+<span class="font-label-lg text-label-lg uppercase text-primary font-bold tracking-wider">Super Admin Governance Mode: ACTIVE</span>
+<span class="rounded bg-surface-container-highest px-2 py-0.5 font-label-sm text-label-sm text-on-surface-variant font-semibold">ISO/IEC 27001 ALIGNED</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Session ID:</span>
+<code class="rounded bg-surface-container px-2 py-1 font-label-sm text-label-sm text-on-surface font-mono">0x9F4E...88B2A</code>
+</div>
+</div>
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-md pt-space-xs">
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-xl">verified_user</span>
+<h1 class="font-headline-sm text-headline-sm text-on-surface font-bold">kunsubphiwichit@gmail.com</h1>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Role: <span class="font-semibold text-primary">SUPER_ADMIN</span> | Hardcoded Access Policy: <span class="font-semibold text-tertiary">PASSED</span> | KMITL Institutional Identity Provider Verified
+          </p>
+</div>
+<!-- Telemetry Chips -->
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-2">
+<div class="flex items-center gap-2 rounded-lg bg-surface-container-lowest px-3 py-2 shadow-sm">
+<span class="material-symbols-outlined text-tertiary text-lg">shield</span>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">WAF STATUS</span>
+<span class="font-label-md text-label-md text-on-surface font-bold">Active &amp; Filtering</span>
+</div>
+</div>
+<div class="flex items-center gap-2 rounded-lg bg-surface-container-lowest px-3 py-2 shadow-sm">
+<span class="material-symbols-outlined text-tertiary text-lg">speed</span>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">RATE LIMIT</span>
+<span class="font-label-md text-label-md text-on-surface font-bold">100 req/min</span>
+</div>
+</div>
+<div class="flex items-center gap-2 rounded-lg bg-surface-container-lowest px-3 py-2 shadow-sm">
+<span class="material-symbols-outlined text-tertiary text-lg">database</span>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">SUPABASE RLS</span>
+<span class="font-label-md text-label-md text-on-surface font-bold">Strict Policy</span>
+</div>
+</div>
+<div class="flex items-center gap-2 rounded-lg bg-surface-container-lowest px-3 py-2 shadow-sm">
+<span class="material-symbols-outlined text-tertiary text-lg">lock</span>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">HSTS POLICY</span>
+<span class="font-label-md text-label-md text-on-surface font-bold">Enforced (31536k)</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Executive KPI Bento Grid -->
+<section class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-space-md">
+<!-- KPI 1 -->
+<div class="flex flex-col justify-between rounded-xl bg-surface-container-lowest p-space-md shadow-sm">
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface-variant font-medium">คำขอแนะนำร้านใหม่รอการอนุมัติ</span>
+<span class="font-label-sm text-label-sm text-primary font-semibold mt-0.5">PENDING APPROVAL</span>
+</div>
+<div class="flex h-10 w-10 items-center justify-center rounded-lg bg-primary-fixed text-on-primary-fixed">
+<span class="material-symbols-outlined text-xl">pending_actions</span>
+</div>
+</div>
+<div class="mt-space-md flex items-baseline justify-between">
+<span class="font-headline-lg text-headline-lg font-extrabold text-on-surface">8 <span class="font-body-md text-body-md text-on-surface-variant font-normal">ร้าน</span></span>
+<button class="flex items-center gap-1 rounded bg-primary px-3 py-1.5 font-label-md text-label-md text-on-primary hover:bg-primary-container transition-colors shadow-sm" id="quick-review-btn">
+<span>พิจารณาด่วน</span>
+<span class="material-symbols-outlined text-base">arrow_forward</span>
+</button>
+</div>
+<div class="mt-space-sm w-full bg-surface-container rounded-full h-1.5 overflow-hidden">
+<div class="bg-primary h-full rounded-full" style="width: 65%;"></div>
+</div>
+</div>
+<!-- KPI 2 -->
+<div class="flex flex-col justify-between rounded-xl bg-surface-container-lowest p-space-md shadow-sm">
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface-variant font-medium">จำนวนร้านค้าที่เปิดให้บริการ</span>
+<span class="font-label-sm text-label-sm text-tertiary font-semibold mt-0.5">ACTIVE STORES IN CAMPUS</span>
+</div>
+<div class="flex h-10 w-10 items-center justify-center rounded-lg bg-tertiary-fixed text-on-tertiary-fixed">
+<span class="material-symbols-outlined text-xl">storefront</span>
+</div>
+</div>
+<div class="mt-space-md flex items-baseline justify-between">
+<span class="font-headline-lg text-headline-lg font-extrabold text-on-surface">142 <span class="font-body-md text-body-md text-on-surface-variant font-normal">ร้าน</span></span>
+<div class="flex items-center gap-1 text-tertiary font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-sm">trending_up</span>
+<span>+6 ร้านสัปดาห์นี้</span>
+</div>
+</div>
+<div class="mt-space-sm flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant">
+<span>โรงอาหารกลาง: 54</span>
+<span>ตึกวิทย์/ECC: 88</span>
+</div>
+</div>
+<!-- KPI 3 -->
+<div class="flex flex-col justify-between rounded-xl bg-surface-container-lowest p-space-md shadow-sm">
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface-variant font-medium">ผู้ใช้งานที่ถูกระงับสิทธิ์ชั่วคราว</span>
+<span class="font-label-sm text-label-sm text-error font-semibold mt-0.5">BANNED ACCOUNTS (AUTO-UNBAN)</span>
+</div>
+<div class="flex h-10 w-10 items-center justify-center rounded-lg bg-error-container text-on-error-container">
+<span class="material-symbols-outlined text-xl">person_off</span>
+</div>
+</div>
+<div class="mt-space-md flex items-baseline justify-between">
+<span class="font-headline-lg text-headline-lg font-extrabold text-on-surface">3 <span class="font-body-md text-body-md text-on-surface-variant font-normal">บัญชี</span></span>
+<span class="rounded bg-error-container px-2 py-0.5 font-label-sm text-label-sm text-on-error-container font-mono">1 unbans in 08:42:11</span>
+</div>
+<div class="mt-space-sm flex items-center gap-1.5 font-label-sm text-label-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-xs text-error">timer</span>
+<span>ระบบปลดอัตโนมัติตามนโยบายสถาบัน</span>
+</div>
+</div>
+<!-- KPI 4 -->
+<div class="flex flex-col justify-between rounded-xl bg-surface-container-lowest p-space-md shadow-sm">
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface-variant font-medium">การตรวจจับคำหยาบที่สกัดกั้น</span>
+<span class="font-label-sm text-label-sm text-tertiary font-semibold mt-0.5">PROFANITY BLOCKED (24H)</span>
+</div>
+<div class="flex h-10 w-10 items-center justify-center rounded-lg bg-secondary-fixed text-on-secondary-fixed">
+<span class="material-symbols-outlined text-xl">filter_alt</span>
+</div>
+</div>
+<div class="mt-space-md flex items-baseline justify-between">
+<span class="font-headline-lg text-headline-lg font-extrabold text-on-surface">49 <span class="font-body-md text-body-md text-on-surface-variant font-normal">ครั้ง</span></span>
+<span class="rounded bg-surface-container-high px-2 py-0.5 font-label-sm text-label-sm text-on-surface font-semibold">100% Intercepted</span>
+</div>
+<div class="mt-space-sm flex items-center gap-1 font-label-sm text-label-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-xs text-tertiary">check_circle</span>
+<span>Zero False-Negative NLP Model</span>
+</div>
+</div>
+</section>
+<!-- Interactive Controls & Panel Navigation Bar -->
+<section class="flex flex-col sm:flex-row items-center justify-between gap-space-sm rounded-xl bg-surface-container-low p-2">
+<div class="flex items-center gap-1 w-full sm:w-auto">
+<button class="tab-button flex items-center gap-2 rounded-lg bg-surface-container-lowest px-4 py-2 font-label-md text-label-md text-primary font-bold shadow-sm transition-all" id="tab-btn-stores" onclick="switchTab('panel-stores')">
+<span class="material-symbols-outlined text-lg">storefront</span>
+<span>Store Management (จัดการร้านค้า)</span>
+</button>
+<button class="tab-button flex items-center gap-2 rounded-lg px-4 py-2 font-label-md text-label-md text-on-surface-variant hover:bg-surface-container font-semibold transition-all" id="tab-btn-users" onclick="switchTab('panel-users')">
+<span class="material-symbols-outlined text-lg">manage_accounts</span>
+<span>User Moderation &amp; Penalties</span>
+</button>
+<button class="tab-button flex items-center gap-2 rounded-lg px-4 py-2 font-label-md text-label-md text-on-surface-variant hover:bg-surface-container font-semibold transition-all" id="tab-btn-audit" onclick="switchTab('panel-audit')">
+<span class="material-symbols-outlined text-lg">policy</span>
+<span>Security Audit Logs (พ.ร.บ. คอมพิวเตอร์)</span>
+</button>
+</div>
+<div class="flex items-center gap-2 self-end sm:self-auto pr-2">
+<span class="material-symbols-outlined text-on-surface-variant text-base">sync</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-mono">Stream: LIVE_WS</span>
+</div>
+</section>
+<!-- PANEL A: Store Management -->
+<section class="admin-panel flex flex-col gap-space-md" id="panel-stores">
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-sm">
+<div class="flex flex-col">
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-bold">Store Management (ระบบจัดการและอนุมัติร้านค้า)</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">คัดกรองคำขอขึ้นทะเบียนร้านอาหาร ตรวจสอบมาตรฐานสุขอนามัย และควบคุมสถานะการเปิดบริการบน KMITL Hub</p>
+</div>
+<div class="flex items-center gap-2">
+<button class="flex items-center gap-1.5 rounded-lg bg-surface-container px-3 py-2 font-label-md text-label-md text-on-surface hover:bg-surface-container-high transition-colors">
+<span class="material-symbols-outlined text-base">download</span>
+<span>ส่งออกรายงาน CSV</span>
+</button>
+<button class="flex items-center gap-1.5 rounded-lg bg-primary px-3 py-2 font-label-md text-label-md text-on-primary hover:bg-primary-container transition-colors shadow-sm">
+<span class="material-symbols-outlined text-base">add</span>
+<span>เพิ่มร้านค้าโดยตรง</span>
+</button>
+</div>
+</div>
+<!-- Pending & Active Store Table -->
+<div class="overflow-x-auto rounded-xl bg-surface-container-lowest shadow-sm">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-surface-container-low font-label-md text-label-md text-on-surface-variant uppercase">
+<th class="px-space-md py-3 font-semibold">ร้านค้า &amp; รายละเอียด</th>
+<th class="px-space-md py-3 font-semibold">พิกัด / โซน</th>
+<th class="px-space-md py-3 font-semibold">ผู้เสนอ / ร้านค้า</th>
+<th class="px-space-md py-3 font-semibold">สถานะคำขอ</th>
+<th class="px-space-md py-3 font-semibold text-right">การจัดการ</th>
+</tr>
+</thead>
+<tbody class="divide-y-0 font-body-sm text-body-sm text-on-surface">
+<!-- Item 1 -->
+<tr class="hover:bg-surface-container-low/60 transition-colors">
+<td class="px-space-md py-space-md">
+<div class="flex items-center gap-space-sm">
+<img class="h-12 w-12 rounded-lg object-cover" data-alt="Authentic spicy southern Thai curry with steamed jasmine rice served in clean white plate at KMITL dining hall, natural warm light, sharp presentation" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBCHWPlZO3xCLx1bLAJDw4amoZlW3FbkJBxIm4YvT-oIozv7FTEXPU9VaWYb0s0x1ZnHSNjFe3nwfztBl6fOl57WmVGXqBZSNHH3dRbviKid-R-qXUpicL0QxN0qiFRfFsj2p2fRE3Vx1J2-5Hk_Ox4zkd27Y0lpKqmYKjDRHZaFyajWWzGgV-x6SAFWpbvfRqD4PQQfJfKV0xHCY0rBrKhsfTuTSoDnf-0F2EAELh11ELJJYX1AUFEPA"/>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg font-bold text-on-surface">ร้านข้าวแกงปักษ์ใต้หน้าหอใน</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">อาหารตามสั่งและแกงใต้รสเด็ด • ข้าวแกง 2 อย่าง 45 บ.</span>
+</div>
+</div>
+</td>
+<td class="px-space-md py-space-md">
+<div class="flex items-center gap-1 text-on-surface-variant font-label-md text-label-md">
+<span class="material-symbols-outlined text-sm text-primary">location_on</span>
+<span>โซนหอพักนักศึกษา อาคาร A</span>
+</div>
+</td>
+<td class="px-space-md py-space-md">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-semibold text-on-surface">สมศรี บุญเจริญ</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-mono">089-445-XXXX</span>
+</div>
+</td>
+<td class="px-space-md py-space-md">
+<span class="inline-flex items-center gap-1 rounded-full bg-primary-fixed px-2.5 py-1 font-label-sm text-label-sm font-semibold text-on-primary-fixed">
+<span class="h-1.5 w-1.5 rounded-full bg-primary animate-pulse"></span>
+                รอการอนุมัติ (NEW)
+              </span>
+</td>
+<td class="px-space-md py-space-md text-right">
+<div class="flex items-center justify-end gap-1.5">
+<button class="flex items-center gap-1 rounded bg-primary px-3 py-1.5 font-label-sm text-label-sm font-bold text-on-primary hover:bg-primary-container shadow-sm transition-colors" onclick="approveStore('ร้านข้าวแกงปักษ์ใต้หน้าหอใน')">
+<span class="material-symbols-outlined text-base">check</span>
+<span>อนุมัติ</span>
+</button>
+<button class="flex items-center gap-1 rounded bg-surface-container px-2.5 py-1.5 font-label-sm text-label-sm font-semibold text-error hover:bg-error-container hover:text-on-error-container transition-colors" onclick="rejectStore('ร้านข้าวแกงปักษ์ใต้หน้าหอใน')">
+<span class="material-symbols-outlined text-base">close</span>
+<span>ปฏิเสธ</span>
+</button>
+<button class="rounded p-1.5 text-on-surface-variant hover:bg-surface-container hover:text-on-surface">
+<span class="material-symbols-outlined text-lg">edit</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Item 2 -->
+<tr class="hover:bg-surface-container-low/60 transition-colors">
+<td class="px-space-md py-space-md">
+<div class="flex items-center gap-space-sm">
+<img class="h-12 w-12 rounded-lg object-cover" data-alt="Iced Taiwanese milk tea with fresh brown sugar tapioca pearls in clear transparent branded cup standing on clean stone table, bright technical aesthetic" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDh8InHpPY908luhUU7QyuC-vbrX4Ye0d2Ph1TBSbGTmIf2_4R025ONJM1EIYSPbjfWleWOnpHbFNm7qErDeCPVg7Ji1EYuPLeWITUYwlNJlTn5bVImRfsgYdxOqbxu9DxpwyRaiGkHBtXk-AUB66RIwKR54Y_hj70DXaNXaqQ0o3Zs2JqtCFYNGpvrdnrketz4o71JMWM1bIwRsgA-ZxULegKT8ovl1HWUPOYOYHAU3v1YqYrKa4j0bw"/>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg font-bold text-on-surface">ชานมไข่มุก K-Tea หน้าตึกวิทย์</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">เครื่องดื่มชาชงสด ไข่มุกต้มน้ำตาลทรายแดง 0% แคลอรี</span>
+</div>
+</div>
+</td>
+<td class="px-space-md py-space-md">
+<div class="flex items-center gap-1 text-on-surface-variant font-label-md text-label-md">
+<span class="material-symbols-outlined text-sm text-primary">location_on</span>
+<span>ลานหน้าคณะวิทยาศาสตร์ (อาคารจุฬาภรณ์)</span>
+</div>
+</td>
+<td class="px-space-md py-space-md">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-semibold text-on-surface">วิชาญ มหาสมุทร</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-mono">061-923-XXXX</span>
+</div>
+</td>
+<td class="px-space-md py-space-md">
+<span class="inline-flex items-center gap-1 rounded-full bg-primary-fixed px-2.5 py-1 font-label-sm text-label-sm font-semibold text-on-primary-fixed">
+<span class="h-1.5 w-1.5 rounded-full bg-primary animate-pulse"></span>
+                รอการอนุมัติ (NEW)
+              </span>
+</td>
+<td class="px-space-md py-space-md text-right">
+<div class="flex items-center justify-end gap-1.5">
+<button class="flex items-center gap-1 rounded bg-primary px-3 py-1.5 font-label-sm text-label-sm font-bold text-on-primary hover:bg-primary-container shadow-sm transition-colors" onclick="approveStore('ชานมไข่มุก K-Tea หน้าตึกวิทย์')">
+<span class="material-symbols-outlined text-base">check</span>
+<span>อนุมัติ</span>
+</button>
+<button class="flex items-center gap-1 rounded bg-surface-container px-2.5 py-1.5 font-label-sm text-label-sm font-semibold text-error hover:bg-error-container hover:text-on-error-container transition-colors" onclick="rejectStore('ชานมไข่มุก K-Tea หน้าตึกวิทย์')">
+<span class="material-symbols-outlined text-base">close</span>
+<span>ปฏิเสธ</span>
+</button>
+<button class="rounded p-1.5 text-on-surface-variant hover:bg-surface-container hover:text-on-surface">
+<span class="material-symbols-outlined text-lg">edit</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Item 3: Existing Store for Toggle -->
+<tr class="hover:bg-surface-container-low/60 transition-colors">
+<td class="px-space-md py-space-md">
+<div class="flex items-center gap-space-sm">
+<img class="h-12 w-12 rounded-lg object-cover" data-alt="Hainanese steamed chicken rice topped with crisp cucumber slices and spicy ginger sauce dip bowl, authentic food court setting in Bangkok" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDoOBlsR86CSxsUmSXX-y1q0R9wNanarMPw6RCOE-nJ77r5QabNvOSR7JbMpp_-0_9I3Z0g1IVXb-WAXfB1xm1xYt_bap9VanVvbSwolTVHTEpKhsKAKiDjOj0DAPfElEIqTHge416li5vTaOnWy9t5r65sIjdn-5r55GI97g6R715iwYAeCB9EGDpi1xa-fobMo3DRuDDN-1q67mE5vb93Sawi52cdg9COL-xB9zIcq0QwQnhDukExng"/>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg font-bold text-on-surface">ข้าวมันไก่ตอนตอนสถาบัน ECC</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">ข้าวมันไก่ต้ม ไก่ทอด น้ำซุปมะนาวดอง • ร้านประจำเปิด 8:00 - 18:00</span>
+</div>
+</div>
+</td>
+<td class="px-space-md py-space-md">
+<div class="flex items-center gap-1 text-on-surface-variant font-label-md text-label-md">
+<span class="material-symbols-outlined text-sm text-primary">location_on</span>
+<span>โรงอาหารตึก ECC ชั้น 1 ล็อค 12</span>
+</div>
+</td>
+<td class="px-space-md py-space-md">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-semibold text-on-surface">ประสิทธิ์ ชื่นจิต</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-mono">081-332-XXXX</span>
+</div>
+</td>
+<td class="px-space-md py-space-md">
+<span class="inline-flex items-center gap-1 rounded-full bg-secondary-container px-2.5 py-1 font-label-sm text-label-sm font-semibold text-on-secondary-container">
+<span class="h-1.5 w-1.5 rounded-full bg-tertiary"></span>
+                เปิดให้บริการ (OPEN)
+              </span>
+</td>
+<td class="px-space-md py-space-md text-right">
+<div class="flex items-center justify-end gap-1.5">
+<button class="flex items-center gap-1 rounded bg-surface-container px-3 py-1.5 font-label-sm text-label-sm font-semibold text-on-surface hover:bg-surface-container-high transition-colors" onclick="toggleStoreStatus(this)">
+<span class="material-symbols-outlined text-base">pause_circle</span>
+<span>ปิดชั่วคราว</span>
+</button>
+<button class="rounded p-1.5 text-on-surface-variant hover:bg-surface-container hover:text-on-surface">
+<span class="material-symbols-outlined text-lg">edit</span>
+</button>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<!-- PANEL B: User Moderation & Penalties -->
+<section class="admin-panel hidden flex-col gap-space-md" id="panel-users">
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-sm">
+<div class="flex flex-col">
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-bold">User Moderation &amp; Penalties (ระบบจัดการผู้ใช้และแบนบัญชี)</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">จัดการบัญชีที่มีพฤติกรรมละเมิดระเบียบการใช้งาน KMITL Hub ด้วยเกณฑ์ชี้ขาด พร้อมกำหนดระยะเวลาและระบบ Countdown อัตโนมัติ</p>
+</div>
+<div class="flex items-center gap-2">
+<div class="flex items-center gap-2 rounded-lg bg-surface-container-lowest px-3 py-2 shadow-sm">
+<span class="material-symbols-outlined text-error text-base">gavel</span>
+<span class="font-label-md text-label-md text-on-surface font-semibold">Active Bans: 3 บัญชี</span>
+</div>
+</div>
+</div>
+<!-- Active Penalties Table & Action Panel -->
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-space-md">
+<!-- Moderation Form Panel -->
+<div class="rounded-xl bg-surface-container-lowest p-space-md shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-xl">block</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">กำหนดบทลงโทษผู้ใช้</h3>
+</div>
+<form class="flex flex-col gap-space-sm" id="ban-form" onsubmit="handleApplyBan(event)">
+<div class="flex flex-col gap-1">
+<label class="font-label-md text-label-md text-on-surface-variant font-medium">ระบุ KMITL Student/Staff ID หรือ Email</label>
+<input class="w-full rounded bg-surface-container-low px-3 py-2 font-body-sm text-body-sm text-on-surface focus:outline-none focus:bg-surface-container transition-colors" id="ban-user-target" placeholder="65010999@kmitl.ac.th" required="" type="text"/>
+</div>
+<div class="flex flex-col gap-1">
+<label class="font-label-md text-label-md text-on-surface-variant font-medium">ระยะเวลาการระงับสิทธิ์ (Penalty Duration)</label>
+<div class="grid grid-cols-4 gap-1.5">
+<label class="flex flex-col items-center justify-center p-2 rounded bg-surface-container cursor-pointer hover:bg-surface-container-high transition-colors has-[:checked]:bg-primary has-[:checked]:text-on-primary">
+<input checked="" class="sr-only" name="ban_duration" type="radio" value="3"/>
+<span class="font-label-md text-label-md font-bold">3 วัน</span>
+<span class="font-label-sm text-label-sm opacity-80">72 ชม.</span>
+</label>
+<label class="flex flex-col items-center justify-center p-2 rounded bg-surface-container cursor-pointer hover:bg-surface-container-high transition-colors has-[:checked]:bg-primary has-[:checked]:text-on-primary">
+<input class="sr-only" name="ban_duration" type="radio" value="7"/>
+<span class="font-label-md text-label-md font-bold">7 วัน</span>
+<span class="font-label-sm text-label-sm opacity-80">1 สัปดาห์</span>
+</label>
+<label class="flex flex-col items-center justify-center p-2 rounded bg-surface-container cursor-pointer hover:bg-surface-container-high transition-colors has-[:checked]:bg-primary has-[:checked]:text-on-primary">
+<input class="sr-only" name="ban_duration" type="radio" value="30"/>
+<span class="font-label-md text-label-md font-bold">30 วัน</span>
+<span class="font-label-sm text-label-sm opacity-80">1 เดือน</span>
+</label>
+<label class="flex flex-col items-center justify-center p-2 rounded bg-surface-container cursor-pointer hover:bg-surface-container-high transition-colors has-[:checked]:bg-error has-[:checked]:text-on-error">
+<input class="sr-only" name="ban_duration" type="radio" value="PERM"/>
+<span class="font-label-md text-label-md font-bold">ถาวร</span>
+<span class="font-label-sm text-label-sm opacity-80">PERM</span>
+</label>
+</div>
+</div>
+<div class="flex flex-col gap-1">
+<label class="font-label-md text-label-md text-on-surface-variant font-medium">เหตุผลการลงโทษ (ระบุตามระเบียบสถาบัน)</label>
+<select class="w-full rounded bg-surface-container-low px-3 py-2 font-body-sm text-body-sm text-on-surface focus:outline-none" id="ban-reason-preset">
+<option value="สแปมข้อความรีวิวและโฆษณาสินค้าภายนอก">สแปมข้อความรีวิว / โฆษณาสินค้า</option>
+<option value="ตรวจพบการใช้ถ้อยคำหยาบคาย/หมิ่นประมาทร้านค้าซ้ำซาก">ตรวจพบถ้อยคำหยาบคาย/หมิ่นประมาทซ้ำซาก</option>
+<option value="เจตนาบิดเบือนเวลาเดินรถ EV Shuttle">เจตนาบิดเบือนเวลาเดินรถ EV Shuttle</option>
+<option value="CUSTOM">ระบุเหตุผลเอง (Custom Reason)</option>
+</select>
+<textarea class="w-full mt-1 rounded bg-surface-container-low p-2.5 font-body-sm text-body-sm text-on-surface focus:outline-none" id="ban-reason-detail" placeholder="ระบุรายละเอียดหลักฐานหรือเลขที่เรื่องร้องเรียน..." rows="2"></textarea>
+</div>
+<button class="mt-2 flex items-center justify-center gap-2 rounded bg-error px-4 py-2.5 font-label-md text-label-md font-bold text-on-error hover:bg-on-error-container transition-colors shadow-sm" type="submit">
+<span class="material-symbols-outlined text-lg">gavel</span>
+<span>บังคับใช้คำสั่งระงับสิทธิ์ทันที</span>
+</button>
+</form>
+</div>
+<!-- Current Penalized List with Live Countdowns -->
+<div class="lg:col-span-2 rounded-xl bg-surface-container-lowest p-space-md shadow-sm flex flex-col gap-space-sm">
+<div class="flex items-center justify-between pb-2">
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">บัญชีที่กำลังถูกระงับสิทธิ์ (Active Penalties)</h3>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-mono">Syncing with Redis KeyStore</span>
+</div>
+<div class="flex flex-col gap-3" id="penalized-users-list">
+<!-- Banned User 1 -->
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 rounded-lg bg-surface-container-low p-space-sm transition-all hover:bg-surface-container">
+<div class="flex items-start gap-3">
+<div class="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-error-container text-on-error-container">
+<span class="material-symbols-outlined text-xl">person_off</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<span class="font-label-lg text-label-lg font-bold text-on-surface">66010482@kmitl.ac.th</span>
+<span class="rounded bg-error-container px-2 py-0.5 font-label-sm text-label-sm text-on-error-container font-semibold">แบน 3 วัน</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">เหตุผล: ใช้ถ้อยคำคุกคามเจ้าของร้านในรีวิว (ตรวจพบซ้ำ 3 ครั้ง)</p>
+<div class="mt-1 flex items-center gap-2 font-label-sm text-label-sm text-primary font-mono font-semibold">
+<span class="material-symbols-outlined text-sm">timelapse</span>
+<span>AUTO-UNBAN COUNTDOWN:</span>
+<span class="countdown-timer text-on-surface" data-seconds="31331">08:42:11</span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-2 self-end sm:self-center">
+<button class="rounded bg-surface-container-highest px-3 py-1.5 font-label-sm text-label-sm font-semibold text-on-surface hover:bg-surface-container hover:text-primary transition-colors" onclick="unbanUser(this, '66010482@kmitl.ac.th')">
+                ปลดแบนทันที
+              </button>
+</div>
+</div>
+<!-- Banned User 2 -->
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 rounded-lg bg-surface-container-low p-space-sm transition-all hover:bg-surface-container">
+<div class="flex items-start gap-3">
+<div class="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-error-container text-on-error-container">
+<span class="material-symbols-outlined text-xl">person_off</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<span class="font-label-lg text-label-lg font-bold text-on-surface">64050119@kmitl.ac.th</span>
+<span class="rounded bg-error-container px-2 py-0.5 font-label-sm text-label-sm text-on-error-container font-semibold">แบน 7 วัน</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">เหตุผล: เจตนารีพอร์ตข้อมูลพิกัดสถานีรถรางผิดพลาดรบกวนระบบ</p>
+<div class="mt-1 flex items-center gap-2 font-label-sm text-label-sm text-primary font-mono font-semibold">
+<span class="material-symbols-outlined text-sm">timelapse</span>
+<span>AUTO-UNBAN COUNTDOWN:</span>
+<span class="countdown-timer text-on-surface" data-seconds="459200">127:33:20</span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-2 self-end sm:self-center">
+<button class="rounded bg-surface-container-highest px-3 py-1.5 font-label-sm text-label-sm font-semibold text-on-surface hover:bg-surface-container hover:text-primary transition-colors" onclick="unbanUser(this, '64050119@kmitl.ac.th')">
+                ปลดแบนทันที
+              </button>
+</div>
+</div>
+<!-- Banned User 3 -->
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 rounded-lg bg-surface-container-low p-space-sm transition-all hover:bg-surface-container">
+<div class="flex items-start gap-3">
+<div class="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-inverse-surface text-inverse-on-surface">
+<span class="material-symbols-outlined text-xl">gavel</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<span class="font-label-lg text-label-lg font-bold text-on-surface">spammer_kmitl_botnet@gmail.com</span>
+<span class="rounded bg-inverse-surface px-2 py-0.5 font-label-sm text-label-sm text-inverse-on-surface font-semibold">ระงับถาวร (PERMANENT)</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">เหตุผล: สแกนช่องโหว่ API และส่งฟลัดดิ้งพิกัดรถรับส่ง EV</p>
+<div class="mt-1 flex items-center gap-2 font-label-sm text-label-sm text-error font-mono font-semibold">
+<span class="material-symbols-outlined text-sm">lock</span>
+<span>LOCKDOWN: บัญชีถูกแบล็กลิสต์ในระบบ IAM สถาบัน</span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-2 self-end sm:self-center">
+<button class="rounded bg-surface-container-highest px-3 py-1.5 font-label-sm text-label-sm font-semibold text-on-surface hover:bg-surface-container hover:text-primary transition-colors" onclick="unbanUser(this, 'spammer_kmitl_botnet@gmail.com')">
+                ถอนแบล็กลิสต์
+              </button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- PANEL C: Security Audit Logs -->
+<section class="admin-panel hidden flex-col gap-space-md" id="panel-audit">
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-sm">
+<div class="flex flex-col">
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-bold">Security Audit Logs (บันทึกการกระทำตาม พ.ร.บ. คอมพิวเตอร์ 2560)</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">บันทึกธุรกรรมที่ลงนามโดย Zero Trust Cryptographic Proof จัดเก็บไม่น้อยกว่า 90 วันตามข้อบังคับความมั่นคงปลอดภัยสารสนเทศ</p>
+</div>
+<div class="flex items-center gap-2">
+<div class="flex items-center gap-2 rounded-lg bg-surface-container px-3 py-2 font-label-md text-label-md text-on-surface">
+<span class="material-symbols-outlined text-tertiary text-base">verified</span>
+<span>SHA-256 Merkle Chain Integrity: VERIFIED</span>
+</div>
+</div>
+</div>
+<!-- Audit Log Data Table -->
+<div class="overflow-x-auto rounded-xl bg-surface-container-lowest shadow-sm">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-surface-container-low font-label-md text-label-md text-on-surface-variant uppercase">
+<th class="px-space-md py-3 font-semibold">Timestamp (UTC+7)</th>
+<th class="px-space-md py-3 font-semibold">Admin Account</th>
+<th class="px-space-md py-3 font-semibold">Action Performed</th>
+<th class="px-space-md py-3 font-semibold">Target Entity</th>
+<th class="px-space-md py-3 font-semibold">IP Address</th>
+<th class="px-space-md py-3 font-semibold font-mono">Zero Trust Signature</th>
+</tr>
+</thead>
+<tbody class="divide-y-0 font-body-sm text-body-sm text-on-surface font-mono" id="audit-log-tbody">
+<!-- Row 1 -->
+<tr class="hover:bg-surface-container-low/60 transition-colors">
+<td class="px-space-md py-3 text-on-surface-variant">2025-05-18 14:22:04</td>
+<td class="px-space-md py-3 text-primary font-semibold">kunsubphiwichit@gmail.com</td>
+<td class="px-space-md py-3">
+<span class="rounded bg-primary-fixed px-2 py-0.5 font-label-sm text-label-sm text-on-primary-fixed font-bold">APPROVE_STORE</span>
+</td>
+<td class="px-space-md py-3 text-on-surface">STORE_ID: 9481 (ข้าวมันไก่ ECC)</td>
+<td class="px-space-md py-3 text-on-surface-variant">161.200.188.42</td>
+<td class="px-space-md py-3 text-tertiary">ed25519:7a41c...99ef</td>
+</tr>
+<!-- Row 2 -->
+<tr class="hover:bg-surface-container-low/60 transition-colors">
+<td class="px-space-md py-3 text-on-surface-variant">2025-05-18 13:58:31</td>
+<td class="px-space-md py-3 text-primary font-semibold">kunsubphiwichit@gmail.com</td>
+<td class="px-space-md py-3">
+<span class="rounded bg-error-container px-2 py-0.5 font-label-sm text-label-sm text-on-error-container font-bold">BAN_USER</span>
+</td>
+<td class="px-space-md py-3 text-on-surface">USER: 66010482 (3 Days)</td>
+<td class="px-space-md py-3 text-on-surface-variant">161.200.188.42</td>
+<td class="px-space-md py-3 text-tertiary">ed25519:3b19c...28ad</td>
+</tr>
+<!-- Row 3 -->
+<tr class="hover:bg-surface-container-low/60 transition-colors">
+<td class="px-space-md py-3 text-on-surface-variant">2025-05-18 11:15:20</td>
+<td class="px-space-md py-3 text-primary font-semibold">kunsubphiwichit@gmail.com</td>
+<td class="px-space-md py-3">
+<span class="rounded bg-secondary-fixed px-2 py-0.5 font-label-sm text-label-sm text-on-secondary-fixed font-bold">UPDATE_ROUTE</span>
+</td>
+<td class="px-space-md py-3 text-on-surface">ROUTE: EV-SHUTTLE-GREEN-02</td>
+<td class="px-space-md py-3 text-on-surface-variant">161.200.188.42</td>
+<td class="px-space-md py-3 text-tertiary">ed25519:9f80a...110c</td>
+</tr>
+<!-- Row 4 -->
+<tr class="hover:bg-surface-container-low/60 transition-colors">
+<td class="px-space-md py-3 text-on-surface-variant">2025-05-18 09:40:12</td>
+<td class="px-space-md py-3 text-primary font-semibold">kunsubphiwichit@gmail.com</td>
+<td class="px-space-md py-3">
+<span class="rounded bg-surface-container-highest px-2 py-0.5 font-label-sm text-label-sm text-on-surface font-bold">CONFIG_RATE_LIMIT</span>
+</td>
+<td class="px-space-md py-3 text-on-surface">GATEWAY: /api/v2/telematics</td>
+<td class="px-space-md py-3 text-on-surface-variant">161.200.188.42</td>
+<td class="px-space-md py-3 text-tertiary">ed25519:e44b9...558a</td>
+</tr>
+<!-- Row 5 -->
+<tr class="hover:bg-surface-container-low/60 transition-colors">
+<td class="px-space-md py-3 text-on-surface-variant">2025-05-17 19:04:45</td>
+<td class="px-space-md py-3 text-primary font-semibold">kunsubphiwichit@gmail.com</td>
+<td class="px-space-md py-3">
+<span class="rounded bg-error-container px-2 py-0.5 font-label-sm text-label-sm text-on-error-container font-bold">BAN_USER</span>
+</td>
+<td class="px-space-md py-3 text-on-surface">USER: spammer_botnet (PERM)</td>
+<td class="px-space-md py-3 text-on-surface-variant">161.200.188.42</td>
+<td class="px-space-md py-3 text-tertiary">ed25519:08f3e...77ab</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<!-- Interactive JavaScript Engine -->
+<script>
+    function switchTab(panelId) {
+      const panels = document.querySelectorAll('.admin-panel');
+      panels.forEach(panel => {
+        panel.classList.add('hidden');
+        panel.classList.remove('flex');
+      });
+
+      const activePanel = document.getElementById(panelId);
+      if (activePanel) {
+        activePanel.classList.remove('hidden');
+        activePanel.classList.add('flex');
+      }
+
+      const buttons = document.querySelectorAll('.tab-button');
+      buttons.forEach(btn => {
+        btn.classList.remove('bg-surface-container-lowest', 'text-primary', 'shadow-sm', 'font-bold');
+        btn.classList.add('text-on-surface-variant', 'font-semibold');
+      });
+
+      if (panelId === 'panel-stores') {
+        const btn = document.getElementById('tab-btn-stores');
+        btn.classList.add('bg-surface-container-lowest', 'text-primary', 'shadow-sm', 'font-bold');
+        btn.classList.remove('text-on-surface-variant');
+      } else if (panelId === 'panel-users') {
+        const btn = document.getElementById('tab-btn-users');
+        btn.classList.add('bg-surface-container-lowest', 'text-primary', 'shadow-sm', 'font-bold');
+        btn.classList.remove('text-on-surface-variant');
+      } else if (panelId === 'panel-audit') {
+        const btn = document.getElementById('tab-btn-audit');
+        btn.classList.add('bg-surface-container-lowest', 'text-primary', 'shadow-sm', 'font-bold');
+        btn.classList.remove('text-on-surface-variant');
+      }
+    }
+
+    function addAuditLog(action, target) {
+      const tbody = document.getElementById('audit-log-tbody');
+      const now = new Date();
+      const timeStr = now.toISOString().replace('T', ' ').substring(0, 19);
+      const hexSignature = 'ed25519:' + Math.random().toString(16).substr(2, 5) + '...' + Math.random().toString(16).substr(2, 4);
+
+      let actionBadge = `<span class="rounded bg-primary-fixed px-2 py-0.5 font-label-sm text-label-sm text-on-primary-fixed font-bold">${action}</span>`;
+      if (action.includes('BAN') || action.includes('REJECT')) {
+        actionBadge = `<span class="rounded bg-error-container px-2 py-0.5 font-label-sm text-label-sm text-on-error-container font-bold">${action}</span>`;
+      } else if (action.includes('UNBAN') || action.includes('TOGGLE')) {
+        actionBadge = `<span class="rounded bg-secondary-fixed px-2 py-0.5 font-label-sm text-label-sm text-on-secondary-fixed font-bold">${action}</span>`;
+      }
+
+      const tr = document.createElement('tr');
+      tr.className = 'hover:bg-surface-container-low/60 transition-colors animate-pulse';
+      tr.innerHTML = `
+        <td class="px-space-md py-3 text-on-surface-variant">${timeStr}</td>
+        <td class="px-space-md py-3 text-primary font-semibold">kunsubphiwichit@gmail.com</td>
+        <td class="px-space-md py-3">${actionBadge}</td>
+        <td class="px-space-md py-3 text-on-surface">${target}</td>
+        <td class="px-space-md py-3 text-on-surface-variant">161.200.188.42</td>
+        <td class="px-space-md py-3 text-tertiary">${hexSignature}</td>
+      `;
+      tbody.insertBefore(tr, tbody.firstChild);
+    }
+
+    function approveStore(storeName) {
+      addAuditLog('APPROVE_STORE', storeName);
+      alert(`[Audit Logged] อนุมัติการเปิดให้บริการ "${storeName}" สำเร็จ และลงนาม Zero Trust Signature แล้ว`);
+    }
+
+    function rejectStore(storeName) {
+      addAuditLog('REJECT_STORE', storeName);
+      alert(`[Audit Logged] ปฏิเสธคำขอขึ้นทะเบียนร้าน "${storeName}" สำเร็จ`);
+    }
+
+    function toggleStoreStatus(btn) {
+      const isClosed = btn.innerText.includes('เปิดให้บริการ');
+      if (isClosed) {
+        btn.innerHTML = `<span class="material-symbols-outlined text-base">pause_circle</span><span>ปิดชั่วคราว</span>`;
+        addAuditLog('STORE_OPEN', 'ข้าวมันไก่ตอนสถาบัน ECC');
+      } else {
+        btn.innerHTML = `<span class="material-symbols-outlined text-base">play_circle</span><span>เปิดให้บริการ</span>`;
+        addAuditLog('STORE_PAUSE', 'ข้าวมันไก่ตอนสถาบัน ECC');
+      }
+    }
+
+    function handleApplyBan(event) {
+      event.preventDefault();
+      const user = document.getElementById('ban-user-target').value;
+      const duration = document.querySelector('input[name="ban_duration"]:checked').value;
+      const reasonPreset = document.getElementById('ban-reason-preset').value;
+      const reasonCustom = document.getElementById('ban-reason-detail').value;
+      const reason = reasonCustom ? reasonCustom : reasonPreset;
+
+      addAuditLog(`BAN_USER_${duration}D`, `${user} (${reason})`);
+
+      const list = document.getElementById('penalized-users-list');
+      const item = document.createElement('div');
+      item.className = 'flex flex-col sm:flex-row sm:items-center justify-between gap-3 rounded-lg bg-surface-container-low p-space-sm transition-all hover:bg-surface-container';
+      item.innerHTML = `
+        <div class="flex items-start gap-3">
+          <div class="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-error-container text-on-error-container">
+            <span class="material-symbols-outlined text-xl">person_off</span>
+          </div>
+          <div class="flex flex-col">
+            <div class="flex items-center gap-2">
+              <span class="font-label-lg text-label-lg font-bold text-on-surface">${user}</span>
+              <span class="rounded bg-error-container px-2 py-0.5 font-label-sm text-label-sm text-on-error-container font-semibold">แบน ${duration === 'PERM' ? 'ถาวร' : duration + ' วัน'}</span>
+            </div>
+            <p class="font-body-sm text-body-sm text-on-surface-variant">เหตุผล: ${reason}</p>
+            <div class="mt-1 flex items-center gap-2 font-label-sm text-label-sm text-primary font-mono font-semibold">
+              <span class="material-symbols-outlined text-sm">timelapse</span>
+              <span>AUTO-UNBAN COUNTDOWN:</span>
+              <span class="countdown-timer text-on-surface" data-seconds="${duration === 'PERM' ? 9999999 : parseInt(duration) * 86400}">${duration === 'PERM' ? 'PERMANENT' : duration + 'd 00:00:00'}</span>
+            </div>
+          </div>
+        </div>
+        <div class="flex items-center gap-2 self-end sm:self-center">
+          <button onclick="unbanUser(this, '${user}')" class="rounded bg-surface-container-highest px-3 py-1.5 font-label-sm text-label-sm font-semibold text-on-surface hover:bg-surface-container hover:text-primary transition-colors">
+            ปลดแบนทันที
+          </button>
+        </div>
+      `;
+      list.prepend(item);
+      document.getElementById('ban-form').reset();
+      alert(`[Security Governance] แบนผู้ใช้ ${user} เรียบร้อยแล้ว (บันทึก พ.ร.บ. คอมพิวเตอร์ พร้อมลายเซ็นดิจิทัล)`);
+    }
+
+    function unbanUser(buttonElement, targetUser) {
+      const container = buttonElement.closest('.flex-col.sm\\:flex-row');
+      if (container) {
+        container.remove();
+      }
+      addAuditLog('UNBAN_USER_MANUAL', targetUser);
+      alert(`ปลดการระงับสิทธิ์ผู้ใช้ ${targetUser} เรียบร้อยแล้ว`);
+    }
+
+    document.getElementById('quick-review-btn').addEventListener('click', () => {
+      switchTab('panel-stores');
+      const table = document.querySelector('#panel-stores table');
+      if (table) {
+        table.scrollIntoView({ behavior: 'smooth' });
+      }
+    });
+
+    // Auto-countdown timer tick simulation
+    setInterval(() => {
+      document.querySelectorAll('.countdown-timer').forEach(el => {
+        let sec = parseInt(el.getAttribute('data-seconds') || '0', 10);
+        if (sec > 0 && sec < 9000000) {
+          sec--;
+          el.setAttribute('data-seconds', sec);
+          const hrs = Math.floor(sec / 3600);
+          const mins = Math.floor((sec % 3600) / 60);
+          const secs = sec % 60;
+          el.textContent = `${String(hrs).padStart(2, '0')}:${String(mins).padStart(2, '0')}:${String(secs).padStart(2, '0')}`;
+        }
+      });
+    }, 1000);
+  </script>
+</div></main></div></body></html>

@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+
+<html class="light" lang="th"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><title>KMITL Food &amp; Transport Hub</title><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;family=Space+Grotesk:wght@500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "surface-tint": "#ad3300", "surface-container-high": "#e8e7f1", "on-surface-variant": "#5a4139", "on-secondary-fixed-variant": "#3f465c", "outline": "#8e7067", "primary": "#a93200", "tertiary-fixed-dim": "#93ccff", "on-tertiary-container": "#fdfcff", "surface-dim": "#dad9e3", "surface-container-low": "#f4f2fd", "surface-container": "#eeedf7", "inverse-surface": "#2f3038", "secondary-container": "#dae2fd", "secondary": "#565e74", "error": "#ba1a1a", "surface": "#fbf8ff", "outline-variant": "#e2bfb4", "primary-fixed-dim": "#ffb59e", "on-secondary-fixed": "#131b2e", "inverse-primary": "#ffb59e", "tertiary": "#006194", "secondary-fixed-dim": "#bec6e0", "tertiary-container": "#007bb9", "on-secondary-container": "#5c647a", "background": "#fbf8ff", "on-error-container": "#93000a", "primary-container": "#d1430a", "surface-variant": "#e3e1ec", "on-error": "#ffffff", "inverse-on-surface": "#f1effa", "on-tertiary-fixed-variant": "#004b73", "on-background": "#1a1b22", "on-tertiary-fixed": "#001d31", "on-primary-container": "#fffbff", "tertiary-fixed": "#cce5ff", "primary-fixed": "#ffdbd0", "secondary-fixed": "#dae2fd", "error-container": "#ffdad6", "surface-container-lowest": "#ffffff", "on-primary-fixed": "#3a0b00", "on-primary": "#ffffff", "on-tertiary": "#ffffff", "surface-bright": "#fbf8ff", "on-primary-fixed-variant": "#842500", "on-secondary": "#ffffff", "on-surface": "#1a1b22", "surface-container-highest": "#e3e1ec" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "gutter-desktop": "2rem", "space-xs": "0.25rem", "space-lg": "1.5rem", "space-sm": "0.5rem", "margin-tablet": "2rem", "space-xl": "2.5rem", "gutter": "1rem", "space-md": "1rem", "margin-desktop": "3rem", "margin": "1rem", "gutter-tablet": "1.5rem" }, "fontFamily": { "body-sm": [ "Inter" ], "display-xl": [ "Inter" ], "headline-lg-mobile": [ "Inter" ], "headline-md": [ "Inter" ], "label-md": [ "Space Grotesk" ], "body-lg": [ "Inter" ], "label-lg": [ "Space Grotesk" ], "headline-lg": [ "Inter" ], "headline-sm": [ "Inter" ], "label-sm": [ "Space Grotesk" ], "display-xl-mobile": [ "Inter" ], "body-md": [ "Inter" ] }, "fontSize": { "body-sm": [ "13px", { "lineHeight": "18px", "fontWeight": "400" } ], "display-xl": [ "56px", { "lineHeight": "64px", "letterSpacing": "-0.03em", "fontWeight": "800" } ], "headline-lg-mobile": [ "28px", { "lineHeight": "36px", "letterSpacing": "-0.02em", "fontWeight": "700" } ], "headline-md": [ "24px", { "lineHeight": "32px", "letterSpacing": "-0.015em", "fontWeight": "600" } ], "label-md": [ "12px", { "lineHeight": "16px", "letterSpacing": "0.04em", "fontWeight": "600" } ], "body-lg": [ "18px", { "lineHeight": "28px", "fontWeight": "400" } ], "label-lg": [ "14px", { "lineHeight": "20px", "letterSpacing": "0.02em", "fontWeight": "600" } ], "headline-lg": [ "36px", { "lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "700" } ], "headline-sm": [ "20px", { "lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "600" } ], "label-sm": [ "10px", { "lineHeight": "14px", "letterSpacing": "0.06em", "fontWeight": "700" } ], "display-xl-mobile": [ "38px", { "lineHeight": "44px", "letterSpacing": "-0.025em", "fontWeight": "800" } ], "body-md": [ "15px", { "lineHeight": "24px", "fontWeight": "400" } ] } } } };</script></head><body class="bg-background font-body-md text-on-surface antialiased min-h-screen flex flex-col"><header class="fixed top-0 w-full z-50 bg-surface/90 backdrop-blur-md shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 w-full px-gutter-desktop max-w-[1280px] mx-auto flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-sm flex-shrink-0"><img alt="KMITL Hub Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1WfX8xYRJTl6jSCTUOKUKpaI1bxPH4WA8hswuriE0f87aHm3744qS4jX8ZkGqIJgsSxZZhtUu3LKBZ8Xwym5SlsO5AHZsFEU1DZTxxzWEAg5goTr7suI4dCU8pbJBxwKZ6v1cJpYa-Pcj3dt_nch8YB5lM5Mhn2sn5k84PBLWsMdYmeIbWpWUDCPikG1tZhsGKrHi1yCveZz6TtTfH0eil30mdUT3PssgbVX1_s333JBkbqQ52BMmh_BIJy"/><span class="font-label-lg text-label-lg text-on-surface tracking-tight uppercase">KMITL HUB</span><span class="px-space-xs py-0.5 rounded bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm uppercase tracking-wider font-semibold">สจล. HUB</span></div><nav class="hidden xl:flex items-center gap-space-md" data-active-classes="text-primary font-semibold"><a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="home" href="#">หน้าหลัก</a><a aria-current="page" class="transition-colors text-primary font-semibold" data-path="food-directory" href="#">ค้นหาร้านอาหาร</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="ev-transit" href="#">เส้นทางรถรับส่ง EV</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="suggest-store" href="#">แนะนำร้านใหม่</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="contact-center" href="#">ศูนย์ติดต่อ</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors inline-flex items-center gap-space-xs px-space-sm py-1 rounded bg-surface-container-high" data-path="super-admin-console" href="#"><span class="material-symbols-outlined text-sm text-primary">security</span>Super Admin Console</a></nav><div class="flex items-center gap-space-sm flex-shrink-0"><div class="relative hidden md:block w-48 lg:w-56"><span class="material-symbols-outlined absolute left-2.5 top-1/2 -translate-y-1/2 text-base text-outline">search</span><input class="w-full h-8 pl-8 pr- space-xs bg-surface-container-low rounded font-body-sm text-body-sm text-on-surface placeholder:text-outline focus:outline-none focus:ring-1 focus:ring-primary" placeholder="Quick search..." type="text"/></div><div class="hidden lg:flex items-center gap-space-xs px-space-xs py-1 rounded-full bg-surface-container-low"><span class="w-2 h-2 rounded-full bg-tertiary animate-pulse"></span><span class="font-label-sm text-label-sm text-on-surface-variant whitespace-nowrap">Online • Zero Trust Active</span></div><div class="hidden 2xl:flex items-center px-space-xs py-1 rounded bg-secondary-container text-on-secondary-container font-label-sm text-label-sm max-w-[180px] truncate">kunsubphiwichit@gmail.com</div><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-1 ring-outline-variant" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBjc5kh26wOauIorvLa3R0sjDXCaNnSBN5TJm7IyIVLA2PrTrraORwuqeLRbaC-chaom_CHNH9mssveVjY5wtWGLFr4BN20W87aUn2Qm-HIgKLak2mgquXQvwdKajEZOjQ3SoXYVDQpC9kK5cAivfa9Z7Be4XfFXWvqlIc9nAtmmbXLvahFZZMsY4ZLHywjbcwoQJUFQw1ZDRmT9u3VVNnQvYdneiOZdKlDd8pzBh_NccL4EmItfmTgdA"/></div></div></header><main class="w-full pt-16 flex-1 bg-surface"><div class="flex flex-col w-full">
+<div class="w-full max-w-[1280px] mx-auto px-gutter-desktop py-space-md">
+<!-- Breadcrumb Navigation -->
+<nav aria-label="Breadcrumb" class="flex items-center gap-space-xs font-label-md text-label-md text-on-surface-variant mb-space-md">
+<a class="hover:text-primary transition-colors" href="#">หน้าหลัก</a>
+<span class="material-symbols-outlined text-sm">chevron_right</span>
+<a class="hover:text-primary transition-colors" href="#">ร้านอาหาร</a>
+<span class="material-symbols-outlined text-sm">chevron_right</span>
+<span class="text-on-surface font-semibold">ครัววิศวกรรมศาสตร์ KMITL (ตึก A)</span>
+</nav>
+<!-- Store Profile Header Card -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col lg:flex-row gap-space-lg items-start justify-between relative overflow-hidden mb-space-lg">
+<div class="flex flex-col md:flex-row gap-space-md items-start md:items-center w-full lg:w-auto">
+<div class="relative w-28 h-28 md:w-32 md:h-32 rounded-xl overflow-hidden flex-shrink-0 bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="A clean, modern canteen culinary stall in King Mongkut's Institute of Technology Ladkrabang engineering cafeteria. Sleek stainless steel counters with organized Thai street food preparation bowls, crisp warm overhead lighting, and student dining trays." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBi0riKXmaFxvI9OTbIb-8FvZFPkPySWWCLhVfoYpwEM6hVd976c4KuZEgzNCIVvwz4qxRlUFpsuXxxK5GkWBtl5PN1-uWb-LRGVCCq2xaxsbyVVunRh6ttrd0jp3EtSb3WytKmV9zn5fHgNj2z7X63GK8tXU40HVjEQ5DoZ-APNBnttwzmbRwaGEybALBw7F7eO5Dcx0asCJjY3o0RFvnWw_A0QI2N9x4bbnTVMEv3t_BVsm0W4-shww"/>
+</div>
+<div class="flex flex-col gap-space-xs">
+<div class="flex flex-wrap items-center gap-space-xs">
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm uppercase tracking-wide">
+<span class="material-symbols-outlined text-xs">verified</span>
+              รับรองโดย สโมสรนักศึกษา &amp; สจล. HUB
+            </span>
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-surface-container-high text-secondary font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-xs">storefront</span>
+              โรงอาหารตึก A ชั้น 1
+            </span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">ครัววิศวกรรมศาสตร์ KMITL (ตึก A)</h1>
+<div class="flex flex-wrap items-center gap-space-md font-body-sm text-body-sm text-on-surface-variant">
+<div class="flex items-center gap-1">
+<div class="flex text-primary">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<span class="font-label-lg text-label-lg text-on-surface font-bold ml-1">4.9</span>
+<span class="text-on-surface-variant font-label-sm text-label-sm">(428 รีวิวที่ผ่านการตรวจสอบ)</span>
+</div>
+<span class="text-outline-variant">•</span>
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-sm text-secondary">payments</span>
+<span>฿40 - ฿75 (ราคานักศึกษา)</span>
+</div>
+<span class="text-outline-variant">•</span>
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-sm text-secondary">schedule</span>
+<span>จันทร์ - ศุกร์ 07:00 - 18:30 น.</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Quick Action / Live Badge -->
+<div class="flex lg:flex-col items-center lg:items-end justify-between w-full lg:w-auto gap-space-sm pt-space-xs border-t lg:border-t-0 border-surface-container-high">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-surface-container-low text-tertiary font-label-md text-label-md">
+<span class="w-2 h-2 rounded-full bg-tertiary animate-pulse"></span>
+<span>เปิดให้บริการอยู่ (คิวสั้น &lt; 5 นาที)</span>
+</div>
+<div class="text-right">
+<span class="font-label-sm text-label-sm text-on-surface-variant block">รหัสประจำร้าน</span>
+<span class="font-label-md text-label-md text-on-surface tracking-wider font-mono">ENG-KMITL-0012</span>
+</div>
+</div>
+</div>
+<!-- Main Content Split Layout -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-start">
+<!-- Left Column (60% Desktop: col-span-7 or 8) -->
+<div class="lg:col-span-7 xl:col-span-8 flex flex-col gap-space-lg">
+<!-- Popular Dishes Section -->
+<section class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm">
+<div class="flex items-center justify-between mb-space-md">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-primary font-bold">Recommended</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">เมนูยอดนิยมประจำร้าน</h2>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-mono">3 เมนูแนะนำ</span>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-space-md">
+<!-- Dish 1 -->
+<div class="bg-surface-container-low rounded-lg p-space-sm flex flex-col justify-between hover:bg-surface-container transition-colors">
+<div class="w-full h-32 rounded bg-surface-container overflow-hidden mb-space-sm">
+<img class="w-full h-full object-cover" data-alt="Traditional Thai holy basil stir-fry with crispy pork belly topped with twin fried eggs served over fragrant steamed jasmine rice on a canteen steel tray with warm restaurant lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuATIazSY7RQGqdJHtIovyOYTLg6IBCQYgUbNV_wlemplmFtGgz69BAHSOe1ZPlOhUMQTcG2V5UW7C7lTSSAUtvKGL43U7JkpDdAwSZUg1E5FL8rLXPKkEk17ELF2UZyHl6SHnDV-EIVu-68LBfbFnCSWgocA6KTBkbYokNJqdinnFUdejGNsKE2V4gn7kETshEUsFeMqWpf_v4Sgi-BzpmBHIf9mD7hiot5mfPeNMw-P5ciVzzKUXWXbQ"/>
+</div>
+<div>
+<span class="font-label-sm text-label-sm text-primary font-semibold">อันดับ 1</span>
+<h3 class="font-label-lg text-label-lg text-on-surface line-clamp-1">ข้าวกะเพราหมูกรอบไข่ดาวแฝด</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mt-0.5">หมูกรอบทอดใหม่ ผัดพริกแห้งเข้มข้น ไข่ดาวคู่สุกกำลังดี</p>
+</div>
+<div class="flex items-center justify-between mt-space-sm pt-space-xs border-t border-surface-variant">
+<span class="font-label-md text-label-md text-on-surface font-bold">฿65</span>
+<span class="inline-flex items-center gap-0.5 text-xs text-on-surface-variant">
+<span class="material-symbols-outlined text-xs text-primary" style="font-variation-settings: 'FILL' 1;">star</span>
+                  4.9 (184)
+                </span>
+</div>
+</div>
+<!-- Dish 2 -->
+<div class="bg-surface-container-low rounded-lg p-space-sm flex flex-col justify-between hover:bg-surface-container transition-colors">
+<div class="w-full h-32 rounded bg-surface-container overflow-hidden mb-space-sm">
+<img class="w-full h-full object-cover" data-alt="Vibrant Thai tom yum seafood fried rice loaded with plump river prawns and calamari squid rings, garnished with fresh cilantro and lime wedge under soft diffused studio canteen light." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBg30izVYJcL--YFWN0nW_u-xMvdueazyJ8tZegl07m7p_KN_IulXEzl6DHi0Ep9Z0FY67zIkcPgss11K5PdD-eMQjg5rAaoZk4xyXCJdfQILleEWW5ihLaLhufMFEX2ULJzYnAzEhXsy0Ct8ppgEDHu6yerpJWGw4RNl2MCK-JJlT4wzEd3UcFP_vwUU4lX_adGxhPXJmytjrfRT04dpNBNck_4JOWHzzymJhXbIcw2s4Gvp-324NxEA"/>
+</div>
+<div>
+<span class="font-label-sm text-label-sm text-secondary font-semibold">อันดับ 2</span>
+<h3 class="font-label-lg text-label-lg text-on-surface line-clamp-1">ข้าวผัดต้มยำทะเล</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mt-0.5">กุ้งสด หมึกชิ้นโต หอมสมุนไพร ข่า ตะไคร้ ใบมะกรูด</p>
+</div>
+<div class="flex items-center justify-between mt-space-sm pt-space-xs border-t border-surface-variant">
+<span class="font-label-md text-label-md text-on-surface font-bold">฿60</span>
+<span class="inline-flex items-center gap-0.5 text-xs text-on-surface-variant">
+<span class="material-symbols-outlined text-xs text-primary" style="font-variation-settings: 'FILL' 1;">star</span>
+                  4.8 (112)
+                </span>
+</div>
+</div>
+<!-- Dish 3 -->
+<div class="bg-surface-container-low rounded-lg p-space-sm flex flex-col justify-between hover:bg-surface-container transition-colors">
+<div class="w-full h-32 rounded bg-surface-container overflow-hidden mb-space-sm">
+<img class="w-full h-full object-cover" data-alt="Steaming hot spicy instant noodle hot pot bowl with minced pork, boiled egg yolk, scallions, and rich savory broth photographed inside an engineering campus food court." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCySk4_rYT_gDsTWTqx-VrxKg6YJdvKiEwQ4kRhmLxQiRJrxm6SaPSvds0O6viWqZP1PeElWGZC2s-rG70DTxIemilhJgtyFnSiOdI8LIsTbH2T52uyeldh9GEgEZ43jndv3EUoxQXmi3uf8OhNIcnJhyXld0_f_ytFqC-l2IR4Kl1x3SfsLblFa-D4HJPxVMose1TBK-XC7a9GqbYBbvghIgLc4C2pDELF3W-rdD7gih7MO0ya-9ZS3w"/>
+</div>
+<div>
+<span class="font-label-sm text-label-sm text-secondary font-semibold">อันดับ 3</span>
+<h3 class="font-label-lg text-label-lg text-on-surface line-clamp-1">มาม่าหม้อไฟวิศวะ</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mt-0.5">หม้อไฟเครื่องแน่น หมูสับ กากหมู และไข่ออนเซ็น</p>
+</div>
+<div class="flex items-center justify-between mt-space-sm pt-space-xs border-t border-surface-variant">
+<span class="font-label-md text-label-md text-on-surface font-bold">฿55</span>
+<span class="inline-flex items-center gap-0.5 text-xs text-on-surface-variant">
+<span class="material-symbols-outlined text-xs text-primary" style="font-variation-settings: 'FILL' 1;">star</span>
+                  4.7 (95)
+                </span>
+</div>
+</div>
+</div>
+</section>
+<!-- Interactive Review Submission Component with Profanity Pre-Filter -->
+<section class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm">
+<div class="flex items-center justify-between mb-space-sm">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-primary font-bold">Community Governance</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">เขียนรีวิวและให้คะแนนร้าน</h2>
+</div>
+<div class="flex items-center gap-1 text-tertiary font-label-sm text-label-sm bg-tertiary-fixed px-2.5 py-1 rounded">
+<span class="material-symbols-outlined text-xs">shield</span>
+<span>OWASP Pre-Validation Active</span>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md">
+            แบ่งปันความคิดเห็นอย่างสร้างสรรค์ ข้อมูลของคุณช่วยปรับปรุงคุณภาพบริการและมาตรฐานอาหารสำหรับชุมชนชาว สจล.
+          </p>
+<form class="flex flex-col gap-space-md" id="reviewForm" onsubmit="event.preventDefault(); handleFormSubmit();">
+<!-- Star Rating Picker -->
+<div class="flex flex-col gap-1">
+<label class="font-label-md text-label-md text-on-surface">ระดับความพึงพอใจ:</label>
+<div class="flex items-center gap-1" id="starContainer">
+<button aria-label="1 ดาว" class="p-1 text-primary focus:outline-none hover:scale-110 transition-transform" onclick="setRating(1)" type="button">
+<span class="material-symbols-outlined text-2xl star-icon" style="font-variation-settings: 'FILL' 1;">star</span>
+</button>
+<button aria-label="2 ดาว" class="p-1 text-primary focus:outline-none hover:scale-110 transition-transform" onclick="setRating(2)" type="button">
+<span class="material-symbols-outlined text-2xl star-icon" style="font-variation-settings: 'FILL' 1;">star</span>
+</button>
+<button aria-label="3 ดาว" class="p-1 text-primary focus:outline-none hover:scale-110 transition-transform" onclick="setRating(3)" type="button">
+<span class="material-symbols-outlined text-2xl star-icon" style="font-variation-settings: 'FILL' 1;">star</span>
+</button>
+<button aria-label="4 ดาว" class="p-1 text-primary focus:outline-none hover:scale-110 transition-transform" onclick="setRating(4)" type="button">
+<span class="material-symbols-outlined text-2xl star-icon" style="font-variation-settings: 'FILL' 1;">star</span>
+</button>
+<button aria-label="5 ดาว" class="p-1 text-primary focus:outline-none hover:scale-110 transition-transform" onclick="setRating(5)" type="button">
+<span class="material-symbols-outlined text-2xl star-icon" style="font-variation-settings: 'FILL' 1;">star</span>
+</button>
+<span class="font-label-md text-label-md text-on-surface font-semibold ml-2" id="ratingLabel">5.0 / 5.0 (ยอดเยี่ยม)</span>
+</div>
+</div>
+<!-- Review Textarea with Live Counter -->
+<div class="flex flex-col gap-1">
+<div class="flex justify-between items-center">
+<label class="font-label-md text-label-md text-on-surface" for="reviewText">ความคิดเห็นและคำแนะนำ:</label>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-mono" id="charCount">0 / 400 ตัวอักษร</span>
+</div>
+<textarea class="w-full p-space-sm bg-surface-container-low rounded font-body-sm text-body-sm text-on-surface placeholder:text-outline focus:outline-none focus:ring-1 focus:ring-primary resize-none" id="reviewText" maxlength="400" oninput="handleTextInput(this)" placeholder="ระบุรสชาติอาหาร, ความคุ้มค่า, ปริมาณ หรือความรวดเร็วในการให้บริการ..." rows="4"></textarea>
+</div>
+<!-- Security Hint & Filter Notice -->
+<div class="p-space-sm bg-surface-container rounded flex items-start gap-space-xs text-on-surface-variant">
+<span class="material-symbols-outlined text-base text-primary flex-shrink-0 mt-0.5">policy</span>
+<p class="font-body-sm text-body-sm leading-snug">
+                ระบบมีตัวกรองคำหยาบแบบ Pre-validation อัตโนมัติ (Anti-Hate Speech Filter) ข้อมูลจะผ่านการตรวจสอบความถูกต้องก่อนบันทึกสู่ระบบสาธารณะ
+              </p>
+</div>
+<!-- Interactive Test Simulation Toolbar -->
+<div class="p-space-sm bg-secondary-container/50 rounded flex flex-wrap items-center justify-between gap-space-xs">
+<div class="flex items-center gap-1 font-label-sm text-label-sm text-on-secondary-container">
+<span class="material-symbols-outlined text-sm">science</span>
+<span>ทดสอบการทำงานของตัวกรองความปลอดภัย:</span>
+</div>
+<div class="flex gap-space-xs">
+<button class="px-2.5 py-1 rounded bg-surface-container-lowest font-label-sm text-label-sm text-on-surface hover:bg-surface transition-colors" onclick="simulateTest('รสชาติอร่อยมาก ปริมาณจุใจ หมูกรอบกรุบกรอบมากครับ')" type="button">
+                  ใส่ข้อความปกติ
+                </button>
+<button class="px-2.5 py-1 rounded bg-error/10 font-label-sm text-label-sm text-error hover:bg-error/20 transition-colors" onclick="simulateTest('อาหารโคตรห่วยแตก ไอ้เวรเอ๊ย รอนานมาก')" type="button">
+                  ใส่ข้อความสุ่มเสี่ยง
+                </button>
+</div>
+</div>
+<!-- Submission Row -->
+<div class="flex items-center justify-end gap-space-sm pt-space-xs">
+<button class="px-space-md py-2 rounded bg-surface-container font-label-md text-label-md text-on-surface hover:bg-surface-container-high transition-colors" onclick="resetFormState()" type="reset">
+                ล้างข้อมูล
+              </button>
+<button class="px-space-lg py-2 rounded bg-primary font-label-md text-label-md text-on-primary hover:bg-primary-container transition-colors inline-flex items-center gap-1 shadow-sm" type="submit">
+<span class="material-symbols-outlined text-sm">send</span>
+                เผยแพร่รีวิว
+              </button>
+</div>
+</form>
+</section>
+<!-- Student Reviews Feed -->
+<section class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between pb-space-xs border-b border-surface-container">
+<h2 class="font-headline-sm text-headline-sm text-on-surface">รีวิวจากชุมชนชาว สจล.</h2>
+<div class="flex items-center gap-space-xs font-label-sm text-label-sm text-on-surface-variant">
+<span>เรียงตาม:</span>
+<button class="font-semibold text-primary">ความน่าเชื่อถือสูงสุด</button>
+<span>•</span>
+<button class="hover:text-on-surface">ล่าสุด</button>
+</div>
+</div>
+<div class="flex flex-col gap-space-md" id="reviewsContainer">
+<!-- Review Card 1 -->
+<article class="p-space-md bg-surface-container-low rounded-lg flex flex-col gap-space-xs">
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-9 h-9 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center font-label-md text-label-md font-bold">
+                    TK
+                  </div>
+<div class="flex flex-col">
+<div class="flex items-center gap-1">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Thanawat K.</span>
+<span class="inline-flex items-center gap-0.5 px-1.5 py-0.2 rounded bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm" title="ยืนยันผ่าน KMITL Single Sign-On">
+<span class="material-symbols-outlined text-xs">verified</span>
+                        Verified Student
+                      </span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">ภาควิชาวิศวกรรมคอมพิวเตอร์ • ปี 3</span>
+</div>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-mono">2 ชั่วโมงที่แล้ว</span>
+</div>
+<div class="flex text-primary">
+<span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface">
+                กะเพราหมูกรอบคือเดอะเบสต์ของตึก ECC หมูกรอบไม่เหนียวเลยแม้จะไปตอนบ่ายสอง ป้าคนผัดใจดีมาก ให้ข้าวพูนจานตลอด ไข่ดาวกรอบไข่แดงเยิ้มสมบูรณ์แบบ
+              </p>
+<div class="flex items-center gap-space-md pt-space-xs font-label-sm text-label-sm text-on-surface-variant">
+<button class="inline-flex items-center gap-1 hover:text-primary transition-colors">
+<span class="material-symbols-outlined text-sm">thumb_up</span>
+<span>เป็นประโยชน์ (34)</span>
+</button>
+<button class="inline-flex items-center gap-1 hover:text-error transition-colors">
+<span class="material-symbols-outlined text-sm">flag</span>
+<span>รายงาน</span>
+</button>
+</div>
+</article>
+<!-- Review Card 2 -->
+<article class="p-space-md bg-surface-container-low rounded-lg flex flex-col gap-space-xs">
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-9 h-9 rounded-full bg-primary-fixed text-on-primary-fixed flex items-center justify-center font-label-md text-label-md font-bold">
+                    PS
+                  </div>
+<div class="flex flex-col">
+<div class="flex items-center gap-1">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Dr. Prasert S.</span>
+<span class="inline-flex items-center gap-0.5 px-1.5 py-0.2 rounded bg-secondary-container text-on-secondary-container font-label-sm text-label-sm" title="ยืนยันผ่านเครือข่ายอาจารย์ สจล.">
+<span class="material-symbols-outlined text-xs">verified</span>
+                        Verified Staff
+                      </span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">อาจารย์ประจำคณะวิศวกรรมศาสตร์</span>
+</div>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-mono">เมื่อวานนี้</span>
+</div>
+<div class="flex text-primary">
+<span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-xs text-surface-dim" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface">
+                ข้าวผัดต้มยำทะเลรสชาติคงเส้นคงวา เหมาะกับการมาทานช่วงพักกลางวันก่อนเข้าสอนห้องเลกเชอร์ จัดการคิวได้รวดเร็วดีมาก
+              </p>
+<div class="flex items-center gap-space-md pt-space-xs font-label-sm text-label-sm text-on-surface-variant">
+<button class="inline-flex items-center gap-1 hover:text-primary transition-colors">
+<span class="material-symbols-outlined text-sm">thumb_up</span>
+<span>เป็นประโยชน์ (19)</span>
+</button>
+<button class="inline-flex items-center gap-1 hover:text-error transition-colors">
+<span class="material-symbols-outlined text-sm">flag</span>
+<span>รายงาน</span>
+</button>
+</div>
+</article>
+<!-- Review Card 3 -->
+<article class="p-space-md bg-surface-container-low rounded-lg flex flex-col gap-space-xs">
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-9 h-9 rounded-full bg-surface-container-high text-on-surface flex items-center justify-center font-label-md text-label-md font-bold">
+                    AW
+                  </div>
+<div class="flex flex-col">
+<div class="flex items-center gap-1">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Alisa W.</span>
+<span class="inline-flex items-center gap-0.5 px-1.5 py-0.2 rounded bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-xs">verified</span>
+                        Verified Student
+                      </span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">ภาควิชาวิศวกรรมชีวการแพทย์ • ปี 2</span>
+</div>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-mono">3 วันที่แล้ว</span>
+</div>
+<div class="flex text-primary">
+<span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface">
+                มาม่าหม้อไฟวิศวะแก้หิวช่วงอ่านหนังสือสอบได้ดีมาก น้ำซุปแซ่บกลมกล่อม ราคานักศึกษาแท้จริง ไม่แพงเลยค่ะ
+              </p>
+<div class="flex items-center gap-space-md pt-space-xs font-label-sm text-label-sm text-on-surface-variant">
+<button class="inline-flex items-center gap-1 hover:text-primary transition-colors">
+<span class="material-symbols-outlined text-sm">thumb_up</span>
+<span>เป็นประโยชน์ (28)</span>
+</button>
+<button class="inline-flex items-center gap-1 hover:text-error transition-colors">
+<span class="material-symbols-outlined text-sm">flag</span>
+<span>รายงาน</span>
+</button>
+</div>
+</article>
+</div>
+</section>
+</div>
+<!-- Right Column (40% Desktop: col-span-5 or 4) -->
+<div class="lg:col-span-5 xl:col-span-4 flex flex-col gap-space-lg">
+<!-- Interactive Map & EV Transit Module -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary font-bold">Geolocation &amp; Transit</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">พิกัดและการเดินทาง</h2>
+</div>
+<span class="p-1.5 rounded-full bg-surface-container text-primary">
+<span class="material-symbols-outlined text-base">pin_drop</span>
+</span>
+</div>
+<!-- Google Maps Container -->
+<div class="w-full h-56 rounded-lg overflow-hidden relative shadow-inner" data-location="KMITL ECC Building Faculty of Engineering, Bangkok, Thailand" style="">
+<div class="w-full h-full bg-cover bg-center" data-alt="Satellite and architectural street map layout of KMITL Faculty of Engineering 12-storey ECC building showing transit routes, campus walkways, and shaded EV shuttle passenger pickup spots." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuA_dW7ja0ED3PGn96nfWATJEZoP0vO-zTmphUco2kuhcMM5EGqeH01pBkdXJHO0BZR3y5JQuB5bC5PhijVYIbo_tVrl5fq8VchTsd26qiHIObOiYDNAYmhRj_3UbN6wF4Sl7kYEcinIEaiWGkC739KXwP-HGWNBieAkagWaHEQFs0Lu1_qOKQmMVFhYr78NZfN8uciPhMkNNomocPgGXtVZZvXYJkKW-YpL4PUz6dd9nWV1Y4YGTz_4xg')">
+<div class="absolute inset-0 bg-gradient-to-t from-on-background/70 via-transparent to-transparent flex items-end p-space-sm">
+<div class="bg-surface-container-lowest/95 backdrop-blur-sm px-3 py-1.5 rounded-md flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-sm">location_on</span>
+<span class="font-label-sm text-label-sm text-on-surface font-semibold">13.7297° N, 100.7782° E</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Transit Proximity Telematics -->
+<div class="p-space-sm bg-surface-container-low rounded-lg flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-primary text-base">directions_bus</span>
+<span class="font-label-md text-label-md text-on-surface font-semibold">ป้าย EV Shuttle ที่ใกล้ที่สุด</span>
+</div>
+<span class="font-label-sm text-label-sm text-tertiary font-mono bg-tertiary-fixed px-1.5 py-0.5 rounded">60 เมตร</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              ป้ายหน้าตึกวิศวกรรมศาสตร์ สายสีแดง (สาย 1: หอพักนักศึกษา - สถานีรถไฟพระจอมเกล้า)
+            </p>
+<div class="mt-1 pt-2 border-t border-surface-variant flex items-center justify-between font-label-sm text-label-sm">
+<div class="flex items-center gap-1 text-on-surface">
+<span class="w-2 h-2 rounded-full bg-tertiary animate-ping"></span>
+<span>รถคันถัดไป: EV-04</span>
+</div>
+<span class="font-mono text-primary font-bold">ถึงในอีก ~3 นาที</span>
+</div>
+</div>
+<!-- Location Meta Details -->
+<div class="flex flex-col gap-space-xs text-on-surface-variant font-body-sm text-body-sm">
+<div class="flex items-start gap-2">
+<span class="material-symbols-outlined text-sm text-secondary mt-0.5">apartment</span>
+<span>อาคารเรียนรวม 12 ชั้น (ECC) ชั้น 1 โซนโรงอาหาร A ลาดกระบัง</span>
+</div>
+<div class="flex items-start gap-2">
+<span class="material-symbols-outlined text-sm text-secondary mt-0.5">accessible</span>
+<span>มีทางลาดสำหรับรถเข็น และลิฟต์โดยสารใกล้เคียง</span>
+</div>
+</div>
+<!-- Actions -->
+<div class="flex flex-col gap-space-xs pt-space-xs">
+<a class="w-full py-2.5 px-space-md rounded bg-primary font-label-md text-label-md text-on-primary hover:bg-primary-container transition-colors inline-flex items-center justify-center gap-2 shadow-sm text-center" href="https://maps.google.com" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-sm">navigation</span>
+<span>นำทางไปยังร้าน (Google Maps)</span>
+</a>
+<button class="w-full py-2 px-space-md rounded bg-surface-container font-label-md text-label-md text-on-surface hover:bg-surface-container-high transition-colors inline-flex items-center justify-center gap-2" onclick="copyShareLink()" type="button">
+<span class="material-symbols-outlined text-sm">share</span>
+<span id="shareBtnText">แชร์พิกัดร้าน</span>
+</button>
+<button class="w-full py-1.5 px-space-md rounded font-label-sm text-label-sm text-error hover:bg-error/5 transition-colors inline-flex items-center justify-center gap-1.5" onclick="openReportModal()" type="button">
+<span class="material-symbols-outlined text-sm">report_problem</span>
+<span>รายงานข้อมูลผิดพลาด (Super Admin)</span>
+</button>
+</div>
+</div>
+<!-- Canteen Density & Service Hours Widget -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col gap-space-sm">
+<h3 class="font-label-lg text-label-lg text-on-surface font-semibold flex items-center gap-1.5">
+<span class="material-symbols-outlined text-secondary text-base">timelapse</span>
+            ช่วงเวลาหนาแน่นของร้าน
+          </h3>
+<div class="space-y-2 pt-1 font-label-sm text-label-sm">
+<div>
+<div class="flex justify-between text-on-surface-variant mb-1">
+<span>07:00 - 11:30 (เช้า)</span>
+<span class="text-tertiary">คล่องตัว</span>
+</div>
+<div class="w-full h-1.5 bg-surface-container rounded-full overflow-hidden">
+<div class="bg-tertiary h-full rounded-full" style="width: 25%"></div>
+</div>
+</div>
+<div>
+<div class="flex justify-between text-on-surface-variant mb-1">
+<span>11:30 - 13:30 (กลางวันเร่งด่วน)</span>
+<span class="text-primary font-bold">หนาแน่นปานกลาง</span>
+</div>
+<div class="w-full h-1.5 bg-surface-container rounded-full overflow-hidden">
+<div class="bg-primary h-full rounded-full" style="width: 70%"></div>
+</div>
+</div>
+<div>
+<div class="flex justify-between text-on-surface-variant mb-1">
+<span>13:30 - 18:30 (บ่าย - เย็น)</span>
+<span class="text-tertiary">คล่องตัว</span>
+</div>
+<div class="w-full h-1.5 bg-surface-container rounded-full overflow-hidden">
+<div class="bg-tertiary h-full rounded-full" style="width: 35%"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Security Warning Modal: Anti-Hate Speech & Profanity Alert -->
+<div aria-modal="true" class="fixed inset-0 z-50 flex items-center justify-center bg-inverse-surface/60 backdrop-blur-sm hidden" id="profanityModal" role="dialog">
+<div class="bg-surface-container-lowest max-w-md w-full mx-space-md p-space-lg rounded-xl shadow-xl flex flex-col gap-space-md">
+<div class="w-12 h-12 rounded-full bg-error-container text-on-error-container flex items-center justify-center">
+<span class="material-symbols-outlined text-2xl">gpp_bad</span>
+</div>
+<div class="flex flex-col gap-space-xs">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">ตรวจพบคำที่ไม่เหมาะสม</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+          ข้อความของคุณมีถ้อยคำที่ไม่สอดคล้องกับระเบียบว่าด้วยการแสดงความคิดเห็นของ KMITL Food Hub (Anti-Hate Speech Filter) กรุณาแก้ไขข้อความก่อนเผยแพร่สู่สาธารณะ
+        </p>
+</div>
+<div class="p-space-sm bg-surface-container-low rounded border border-outline-variant/30 font-mono text-label-sm text-error" id="profanityDetectedWord">
+        คำที่ตรวจพบ: [คำหยาบคาย/คำไม่สุภาพ]
+      </div>
+<div class="flex items-center justify-end gap-space-sm pt-space-xs">
+<button class="w-full py-2 rounded bg-primary font-label-md text-label-md text-on-primary hover:bg-primary-container transition-colors" onclick="closeProfanityModal()" type="button">
+          รับทราบและกลับไปแก้ไข
+        </button>
+</div>
+</div>
+</div>
+<!-- Success Notification Modal -->
+<div aria-modal="true" class="fixed inset-0 z-50 flex items-center justify-center bg-inverse-surface/60 backdrop-blur-sm hidden" id="successModal" role="dialog">
+<div class="bg-surface-container-lowest max-w-md w-full mx-space-md p-space-lg rounded-xl shadow-xl flex flex-col items-center text-center gap-space-md">
+<div class="w-12 h-12 rounded-full bg-tertiary-fixed text-on-tertiary-fixed-variant flex items-center justify-center">
+<span class="material-symbols-outlined text-2xl">check_circle</span>
+</div>
+<div class="flex flex-col gap-space-xs">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">บันทึกรีวิวสำเร็จ</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          ความคิดเห็นของคุณผ่านการตรวจสอบความปลอดภัยเรียบร้อยแล้ว และถูกเพิ่มเข้าสู่ฐานข้อมูลระบบชุมชน สจล.
+        </p>
+</div>
+<button class="w-full py-2 rounded bg-surface-container font-label-md text-label-md text-on-surface hover:bg-surface-container-high transition-colors" onclick="closeSuccessModal()" type="button">
+        ตกลง
+      </button>
+</div>
+</div>
+<!-- Super Admin Report Ticket Modal -->
+<div aria-modal="true" class="fixed inset-0 z-50 flex items-center justify-center bg-inverse-surface/60 backdrop-blur-sm hidden" id="reportModal" role="dialog">
+<div class="bg-surface-container-lowest max-w-lg w-full mx-space-md p-space-lg rounded-xl shadow-xl flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">flag</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">รายงานข้อมูลผิดพลาด</h3>
+</div>
+<button class="text-on-surface-variant hover:text-on-surface" onclick="closeReportModal()" type="button">
+<span class="material-symbols-outlined">close</span>
+</button>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+        คำร้องจะถูกส่งตรงไปยัง Super Admin Console ของสโมสรนักศึกษา เพื่อประสานงานฝ่ายอาคารสถานที่ต่อไป
+      </p>
+<div class="flex flex-col gap-space-xs font-label-md text-label-md">
+<label class="text-on-surface">หมวดหมู่ปัญหา:</label>
+<select class="w-full p-2 bg-surface-container-low rounded text-on-surface font-body-sm text-body-sm focus:ring-1 focus:ring-primary focus:outline-none">
+<option>เวลาเปิด-ปิดร้านไม่ตรงกับความเป็นจริง</option>
+<option>ร้านย้ายจุดให้บริการ / ปิดชั่วคราว</option>
+<option>ราคาหรือเมนูอาหารเปลี่ยนแปลง</option>
+<option>พิกัดจุดจอดรถ EV Shuttle คลาดเคลื่อน</option>
+</select>
+</div>
+<div class="flex flex-col gap-space-xs font-label-md text-label-md">
+<label class="text-on-surface">รายละเอียดเพิ่มเติม:</label>
+<textarea class="w-full p-2 bg-surface-container-low rounded text-on-surface font-body-sm text-body-sm focus:ring-1 focus:ring-primary focus:outline-none" placeholder="ระบุข้อความ..." rows="3"></textarea>
+</div>
+<div class="flex justify-end gap-space-xs pt-space-xs">
+<button class="px-4 py-2 rounded bg-surface-container font-label-md text-label-md text-on-surface" onclick="closeReportModal()" type="button">ยกเลิก</button>
+<button class="px-4 py-2 rounded bg-primary font-label-md text-label-md text-on-primary" onclick="submitReportTicket()" type="button">ส่งรายงาน</button>
+</div>
+</div>
+</div>
+</div>
+<script>
+  let currentRating = 5;
+  const ratingLabels = {
+    1: '1.0 / 5.0 (ต้องปรับปรุงอย่างยิ่ง)',
+    2: '2.0 / 5.0 (พอใช้)',
+    3: '3.0 / 5.0 (ปานกลาง)',
+    4: '4.0 / 5.0 (ดีมาก)',
+    5: '5.0 / 5.0 (ยอดเยี่ยม)'
+  };
+
+  const restrictedWords = ['โคตรห่วย', 'ไอ้เวร', 'ห่วยแตก', 'ส้นตีน', 'เย็ด', 'ควย', 'มึง', 'กู'];
+
+  function setRating(rating) {
+    currentRating = rating;
+    const starButtons = document.querySelectorAll('#starContainer button .star-icon');
+    starButtons.forEach((icon, idx) => {
+      if (idx < rating) {
+        icon.style.fontVariationSettings = "'FILL' 1";
+        icon.parentElement.classList.remove('text-surface-dim');
+        icon.parentElement.classList.add('text-primary');
+      } else {
+        icon.style.fontVariationSettings = "'FILL' 0";
+        icon.parentElement.classList.remove('text-primary');
+        icon.parentElement.classList.add('text-surface-dim');
+      }
+    });
+    document.getElementById('ratingLabel').textContent = ratingLabels[rating] || (rating + '.0 / 5.0');
+  }
+
+  function handleTextInput(textarea) {
+    const count = textarea.value.length;
+    document.getElementById('charCount').textContent = count + ' / 400 ตัวอักษร';
+  }
+
+  function simulateTest(text) {
+    const textarea = document.getElementById('reviewText');
+    textarea.value = text;
+    handleTextInput(textarea);
+  }
+
+  function resetFormState() {
+    setRating(5);
+    document.getElementById('reviewText').value = '';
+    document.getElementById('charCount').textContent = '0 / 400 ตัวอักษร';
+  }
+
+  function handleFormSubmit() {
+    const text = document.getElementById('reviewText').value.trim();
+    if (!text) {
+      alert('กรุณากรอกความคิดเห็นก่อนทำการส่ง');
+      return;
+    }
+
+    // Pre-post validation for profanity & hate speech
+    const foundBadWord = restrictedWords.find(word => text.includes(word));
+    if (foundBadWord) {
+      document.getElementById('profanityDetectedWord').textContent = 'ตรวจพบคำที่ไม่เหมาะสม: "' + foundBadWord + '"';
+      document.getElementById('profanityModal').classList.remove('hidden');
+      return;
+    }
+
+    // Append new review dynamically to community feed
+    const container = document.getElementById('reviewsContainer');
+    const newArticle = document.createElement('article');
+    newArticle.className = 'p-space-md bg-surface-container-low rounded-lg flex flex-col gap-space-xs border-l-4 border-primary animate-fade-in';
+    
+    let starSpans = '';
+    for (let i = 1; i <= 5; i++) {
+      const fillStyle = i <= currentRating ? "'FILL' 1" : "'FILL' 0";
+      const colorClass = i <= currentRating ? "text-primary" : "text-surface-dim";
+      starSpans += `<span class="material-symbols-outlined text-xs ${colorClass}" style="font-variation-settings: ${fillStyle};">star</span>`;
+    }
+
+    newArticle.innerHTML = `
+      <div class="flex items-start justify-between">
+        <div class="flex items-center gap-space-sm">
+          <div class="w-9 h-9 rounded-full bg-primary-fixed text-on-primary-fixed flex items-center justify-center font-label-md text-label-md font-bold">
+            ME
+          </div>
+          <div class="flex flex-col">
+            <div class="flex items-center gap-1">
+              <span class="font-label-md text-label-md text-on-surface font-semibold">kunsubphiwichit</span>
+              <span class="inline-flex items-center gap-0.5 px-1.5 py-0.2 rounded bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm">
+                <span class="material-symbols-outlined text-xs">verified</span>
+                Verified KMITL
+              </span>
+            </div>
+            <span class="font-label-sm text-label-sm text-on-surface-variant font-mono">ศูนย์คอมพิวเตอร์และเครือข่าย</span>
+          </div>
+        </div>
+        <span class="font-label-sm text-label-sm text-primary font-mono font-semibold">เมื่อสักครู่</span>
+      </div>
+      <div class="flex">${starSpans}</div>
+      <p class="font-body-md text-body-md text-on-surface">${escapeHtml(text)}</p>
+      <div class="flex items-center gap-space-md pt-space-xs font-label-sm text-label-sm text-on-surface-variant">
+        <span class="inline-flex items-center gap-1 text-primary">
+          <span class="material-symbols-outlined text-sm">thumb_up</span>
+          <span>เป็นประโยชน์ (1)</span>
+        </span>
+      </div>
+    `;
+
+    container.insertBefore(newArticle, container.firstChild);
+    document.getElementById('successModal').classList.remove('hidden');
+    resetFormState();
+  }
+
+  function escapeHtml(string) {
+    const entityMap = {
+      '&': '&amp;',
+      '<': '&lt;',
+      '>': '&gt;',
+      '"': '&quot;',
+      "'": '&#39;',
+      '/': '&#x2F;'
+    };
+    return String(string).replace(/[&<>"'\/]/g, s => entityMap[s]);
+  }
+
+  function closeProfanityModal() {
+    document.getElementById('profanityModal').classList.add('hidden');
+  }
+
+  function closeSuccessModal() {
+    document.getElementById('successModal').classList.add('hidden');
+  }
+
+  function openReportModal() {
+    document.getElementById('reportModal').classList.remove('hidden');
+  }
+
+  function closeReportModal() {
+    document.getElementById('reportModal').classList.add('hidden');
+  }
+
+  function submitReportTicket() {
+    closeReportModal();
+    alert('ส่งรายงานความผิดพลาดไปยัง Super Admin เรียบร้อยแล้ว ขอบคุณที่ร่วมพัฒนาข้อมูล');
+  }
+
+  function copyShareLink() {
+    const textEl = document.getElementById('shareBtnText');
+    const originalText = textEl.textContent;
+    if (navigator.clipboard) {
+      navigator.clipboard.writeText(window.location.href);
+    }
+    textEl.textContent = 'คัดลอกลิงก์สำเร็จ!';
+    setTimeout(() => {
+      textEl.textContent = originalText;
+    }, 2000);
+  }
+</script></main><footer class="w-full bg-surface-container-low py-space-xl shadow-[0_-1px_4px_rgba(0,0,0,0.02)]"><div class="w-full px-gutter-desktop max-w-[1280px] mx-auto flex flex-col md:flex-row items-center justify-between gap-space-md text-center md:text-left"><div class="flex flex-col gap-space-xs"><div class="flex items-center justify-center md:justify-start gap-space-xs"><span class="material-symbols-outlined text-base text-primary">verified_user</span><span class="font-label-md text-label-md text-on-surface">KMITL Food &amp; Transport Hub Enterprise Edition</span></div><p class="font-body-sm text-body-sm text-on-surface-variant">OWASP Top 10 Compliant • Zero Trust Architecture • PDPA &amp; Cyber Security Act Ready</p></div><div class="flex items-center gap-space-lg"><a class="font-label-sm text-label-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="api-documentation" href="#">API Documentation</a><span class="text-outline-variant">•</span><a class="font-label-sm text-label-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="campus-security-protocols" href="#">Campus Security Protocols</a><span class="text-outline-variant">•</span><a class="font-label-sm text-label-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="system-telemetry" href="#">System Telemetry</a></div></div></footer></body></html>

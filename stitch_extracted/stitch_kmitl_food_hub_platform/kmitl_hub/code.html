@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+
+<html class="light" lang="th"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><title>KMITL Food &amp; Transport Hub</title><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;family=Space+Grotesk:wght@500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "surface-tint": "#ad3300", "surface-container-high": "#e8e7f1", "on-surface-variant": "#5a4139", "on-secondary-fixed-variant": "#3f465c", "outline": "#8e7067", "primary": "#a93200", "tertiary-fixed-dim": "#93ccff", "on-tertiary-container": "#fdfcff", "surface-dim": "#dad9e3", "surface-container-low": "#f4f2fd", "surface-container": "#eeedf7", "inverse-surface": "#2f3038", "secondary-container": "#dae2fd", "secondary": "#565e74", "error": "#ba1a1a", "surface": "#fbf8ff", "outline-variant": "#e2bfb4", "primary-fixed-dim": "#ffb59e", "on-secondary-fixed": "#131b2e", "inverse-primary": "#ffb59e", "tertiary": "#006194", "secondary-fixed-dim": "#bec6e0", "tertiary-container": "#007bb9", "on-secondary-container": "#5c647a", "background": "#fbf8ff", "on-error-container": "#93000a", "primary-container": "#d1430a", "surface-variant": "#e3e1ec", "on-error": "#ffffff", "inverse-on-surface": "#f1effa", "on-tertiary-fixed-variant": "#004b73", "on-background": "#1a1b22", "on-tertiary-fixed": "#001d31", "on-primary-container": "#fffbff", "tertiary-fixed": "#cce5ff", "primary-fixed": "#ffdbd0", "secondary-fixed": "#dae2fd", "error-container": "#ffdad6", "surface-container-lowest": "#ffffff", "on-primary-fixed": "#3a0b00", "on-primary": "#ffffff", "on-tertiary": "#ffffff", "surface-bright": "#fbf8ff", "on-primary-fixed-variant": "#842500", "on-secondary": "#ffffff", "on-surface": "#1a1b22", "surface-container-highest": "#e3e1ec" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "gutter-desktop": "2rem", "space-xs": "0.25rem", "space-lg": "1.5rem", "space-sm": "0.5rem", "margin-tablet": "2rem", "space-xl": "2.5rem", "gutter": "1rem", "space-md": "1rem", "margin-desktop": "3rem", "margin": "1rem", "gutter-tablet": "1.5rem" }, "fontFamily": { "body-sm": [ "Inter" ], "display-xl": [ "Inter" ], "headline-lg-mobile": [ "Inter" ], "headline-md": [ "Inter" ], "label-md": [ "Space Grotesk" ], "body-lg": [ "Inter" ], "label-lg": [ "Space Grotesk" ], "headline-lg": [ "Inter" ], "headline-sm": [ "Inter" ], "label-sm": [ "Space Grotesk" ], "display-xl-mobile": [ "Inter" ], "body-md": [ "Inter" ] }, "fontSize": { "body-sm": [ "13px", { "lineHeight": "18px", "fontWeight": "400" } ], "display-xl": [ "56px", { "lineHeight": "64px", "letterSpacing": "-0.03em", "fontWeight": "800" } ], "headline-lg-mobile": [ "28px", { "lineHeight": "36px", "letterSpacing": "-0.02em", "fontWeight": "700" } ], "headline-md": [ "24px", { "lineHeight": "32px", "letterSpacing": "-0.015em", "fontWeight": "600" } ], "label-md": [ "12px", { "lineHeight": "16px", "letterSpacing": "0.04em", "fontWeight": "600" } ], "body-lg": [ "18px", { "lineHeight": "28px", "fontWeight": "400" } ], "label-lg": [ "14px", { "lineHeight": "20px", "letterSpacing": "0.02em", "fontWeight": "600" } ], "headline-lg": [ "36px", { "lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "700" } ], "headline-sm": [ "20px", { "lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "600" } ], "label-sm": [ "10px", { "lineHeight": "14px", "letterSpacing": "0.06em", "fontWeight": "700" } ], "display-xl-mobile": [ "38px", { "lineHeight": "44px", "letterSpacing": "-0.025em", "fontWeight": "800" } ], "body-md": [ "15px", { "lineHeight": "24px", "fontWeight": "400" } ] } } } };</script></head><body class="bg-background font-body-md text-on-surface antialiased min-h-screen flex flex-col"><header class="fixed top-0 w-full z-50 bg-surface/90 backdrop-blur-md shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 w-full px-gutter-desktop max-w-[1280px] mx-auto flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-sm flex-shrink-0"><img alt="KMITL Hub Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1WfX8xYRJTl6jSCTUOKUKpaI1bxPH4WA8hswuriE0f87aHm3744qS4jX8ZkGqIJgsSxZZhtUu3LKBZ8Xwym5SlsO5AHZsFEU1DZTxxzWEAg5goTr7suI4dCU8pbJBxwKZ6v1cJpYa-Pcj3dt_nch8YB5lM5Mhn2sn5k84PBLWsMdYmeIbWpWUDCPikG1tZhsGKrHi1yCveZz6TtTfH0eil30mdUT3PssgbVX1_s333JBkbqQ52BMmh_BIJy"/><span class="font-label-lg text-label-lg text-on-surface tracking-tight uppercase">KMITL HUB</span><span class="px-space-xs py-0.5 rounded bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm uppercase tracking-wider font-semibold">สจล. HUB</span></div><nav class="hidden xl:flex items-center gap-space-md" data-active-classes="text-primary font-semibold"><a aria-current="page" class="transition-colors text-primary font-semibold" data-path="home" href="#">หน้าหลัก</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="food-directory" href="#">ค้นหาร้านอาหาร</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="ev-transit" href="#">เส้นทางรถรับส่ง EV</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="suggest-store" href="#">แนะนำร้านใหม่</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="contact-center" href="#">ศูนย์ติดต่อ</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors inline-flex items-center gap-space-xs px-space-sm py-1 rounded bg-surface-container-high" data-path="super-admin-console" href="#"><span class="material-symbols-outlined text-sm text-primary">security</span>Super Admin Console</a></nav><div class="flex items-center gap-space-sm flex-shrink-0"><div class="relative hidden md:block w-48 lg:w-56"><span class="material-symbols-outlined absolute left-2.5 top-1/2 -translate-y-1/2 text-base text-outline">search</span><input class="w-full h-8 pl-8 pr- space-xs bg-surface-container-low rounded font-body-sm text-body-sm text-on-surface placeholder:text-outline focus:outline-none focus:ring-1 focus:ring-primary" placeholder="Quick search..." type="text"/></div><div class="hidden lg:flex items-center gap-space-xs px-space-xs py-1 rounded-full bg-surface-container-low"><span class="w-2 h-2 rounded-full bg-tertiary animate-pulse"></span><span class="font-label-sm text-label-sm text-on-surface-variant whitespace-nowrap">Online • Zero Trust Active</span></div><div class="hidden 2xl:flex items-center px-space-xs py-1 rounded bg-secondary-container text-on-secondary-container font-label-sm text-label-sm max-w-[180px] truncate">kunsubphiwichit@gmail.com</div><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-1 ring-outline-variant" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBjc5kh26wOauIorvLa3R0sjDXCaNnSBN5TJm7IyIVLA2PrTrraORwuqeLRbaC-chaom_CHNH9mssveVjY5wtWGLFr4BN20W87aUn2Qm-HIgKLak2mgquXQvwdKajEZOjQ3SoXYVDQpC9kK5cAivfa9Z7Be4XfFXWvqlIc9nAtmmbXLvahFZZMsY4ZLHywjbcwoQJUFQw1ZDRmT9u3VVNnQvYdneiOZdKlDd8pzBh_NccL4EmItfmTgdA"/></div></div></header><main class="w-full pt-16 flex-1 bg-surface"><div class="flex flex-col w-full">
+<!-- Dynamic Campus Status Bar -->
+<section class="w-full bg-surface-container-high py-space-xs px-gutter-desktop">
+<div class="max-w-[1280px] mx-auto flex flex-wrap items-center justify-between gap-space-sm font-label-sm text-label-sm text-on-surface-variant">
+<div class="flex items-center gap-space-md">
+<span class="inline-flex items-center gap-1 font-semibold text-primary">
+<span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+          KMITL TELEMETRY LIVE
+        </span>
+<span class="hidden sm:inline text-outline-variant">/</span>
+<span>สภาพการจราจรในวิทยาเขต: ปกติ (Normal Flow)</span>
+<span class="hidden md:inline text-outline-variant">/</span>
+<span class="hidden md:inline">รอบการอัปเดตรถ EV: 30 วินาที</span>
+</div>
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-sm text-tertiary">verified</span>
+<span>ระบบตรวจสอบร้านค้าและฟีดแบ็กไร้คำหยาบ (Content Filter v4.2 Active)</span>
+</div>
+</div>
+</section>
+<!-- Hero Section -->
+<section class="relative w-full bg-gradient-to-b from-surface-container-low via-surface to-surface pb-space-xl overflow-hidden">
+<!-- Subtle architectural mesh background -->
+<div class="absolute inset-0 opacity-15 pointer-events-none">
+<svg class="w-full h-full" height="100%" width="100%" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<pattern height="48" id="kmitl-grid" patternunits="userSpaceOnUse" width="48">
+<path class="text-outline-variant" d="M 48 0 L 0 0 0 48" fill="none" stroke="currentColor" stroke-width="0.75"></path>
+</pattern>
+</defs>
+<rect fill="url(#kmitl-grid)" height="100%" width="100%"></rect>
+</svg>
+</div>
+<!-- Soft Ambient Orange Glow -->
+<div class="absolute -top-32 right-1/4 w-96 h-96 bg-primary-fixed opacity-40 blur-3xl rounded-full pointer-events-none"></div>
+<div class="absolute top-1/2 -left-20 w-80 h-80 bg-secondary-container opacity-30 blur-3xl rounded-full pointer-events-none"></div>
+<div class="relative max-w-[1280px] mx-auto px-gutter-desktop pt-space-xl">
+<!-- Badge & Overline -->
+<div class="flex items-center gap-space-xs mb-space-md">
+<span class="px-space-sm py-1 rounded-full bg-primary text-on-primary font-label-md text-label-md flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">hub</span>
+          KMITL SMART CAMPUS ECOSYSTEM
+        </span>
+<span class="px-space-sm py-1 rounded-full bg-surface-container font-label-sm text-label-sm text-on-surface">
+          ลาดกระบังโมเดล 2025
+        </span>
+</div>
+<!-- Main Headline -->
+<div class="max-w-4xl mb-space-lg">
+<h1 class="font-display-xl text-display-xl text-on-background tracking-tight">
+          ศูนย์รวมข้อมูลร้านอาหาร &amp; เครือข่ายรถรับส่งอัจฉริยะ สจล.
+        </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant mt-space-md max-w-3xl">
+          ระบบนำทางไลฟ์สไตล์และโครงข่ายการเดินทางพลังงานสะอาดแบบเรียลไทม์ เชื่อมโยงคณะ หอพัก แคนทีน และสถานีรถไฟเพื่อชาวพระจอมเกล้าลาดกระบัง
+        </p>
+</div>
+<!-- Multi-Mode Search Component -->
+<div class="w-full bg-surface-container-lowest rounded-xl shadow-xl p-space-md md:p-space-lg max-w-4xl backdrop-blur-md">
+<!-- Search Tabs -->
+<div class="flex items-center gap-space-sm mb-space-md pb-space-sm">
+<button class="search-tab-btn flex items-center gap-space-xs px-space-md py-2 rounded-lg bg-primary text-on-primary font-label-md text-label-md transition-all shadow-sm" id="tab-food" onclick="switchSearchTab('food')">
+<span class="material-symbols-outlined text-base">restaurant</span>
+            ค้นหาร้านและเมนูอาหาร
+          </button>
+<button class="search-tab-btn flex items-center gap-space-xs px-space-md py-2 rounded-lg bg-surface-container-low text-on-surface-variant font-label-md text-label-md hover:bg-surface-container transition-all" id="tab-transit" onclick="switchSearchTab('transit')">
+<span class="material-symbols-outlined text-base">directions_bus</span>
+            ป้ายรถ EV &amp; เส้นทางขนส่ง
+          </button>
+</div>
+<!-- Search Input Bar -->
+<div class="relative flex flex-col md:flex-row items-stretch gap-space-sm">
+<div class="relative flex-1">
+<span class="material-symbols-outlined absolute left-3.5 top-1/2 -translate-y-1/2 text-outline text-xl">search</span>
+<input class="w-full h-12 pl-11 pr-space-md bg-surface-container-low rounded-lg font-body-md text-body-md text-on-surface placeholder:text-outline focus:outline-none focus:bg-surface-container-lowest focus:shadow-md transition-all" id="main-search-input" placeholder="พิมพ์ชื่อร้าน, เมนูยอดนิยม, ตึกคณะ (เช่น วิศวะ ตึก A, โรงอาหารพระเทพ)..." type="text"/>
+</div>
+<div class="flex items-center gap-space-xs">
+<select class="h-12 px-space-md bg-surface-container-low rounded-lg font-label-md text-label-md text-on-surface-variant focus:outline-none cursor-pointer">
+<option value="all">ทุกโซนใน สจล.</option>
+<option value="eng">โซนวิศวกรรมศาสตร์</option>
+<option value="arch">โซนสถาปัตย์ / ศิลปศาสตร์</option>
+<option value="sci">โซนวิทยาศาสตร์ / ไอที</option>
+<option value="dorm">โซนหอพัก / พระเทพ</option>
+</select>
+<button class="h-12 px-space-lg bg-primary-container hover:bg-primary text-on-primary font-label-lg text-label-lg rounded-lg flex items-center justify-center gap-space-xs shadow-md transition-all">
+<span>ค้นหา</span>
+<span class="material-symbols-outlined text-base">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- Quick Tags -->
+<div class="flex flex-wrap items-center gap-space-xs mt-space-md pt-space-xs font-label-sm text-label-sm text-on-surface-variant">
+<span class="font-semibold text-outline">แท็กยอดนิยม:</span>
+<button class="px-space-sm py-1 rounded bg-surface-container-low hover:bg-surface-container text-on-surface transition-colors">ข้าวมันไก่</button>
+<button class="px-space-sm py-1 rounded bg-surface-container-low hover:bg-surface-container text-on-surface transition-colors">ก๋วยเตี๋ยวเรือ</button>
+<button class="px-space-sm py-1 rounded bg-surface-container-low hover:bg-surface-container text-on-surface transition-colors">กาแฟนั่งอ่านหนังสือ</button>
+<button class="px-space-sm py-1 rounded bg-surface-container-low hover:bg-surface-container text-on-surface transition-colors">EV สาย 1 แดง</button>
+<button class="px-space-sm py-1 rounded bg-surface-container-low hover:bg-surface-container text-on-surface transition-colors">สถานีรถไฟพระจอมเกล้า</button>
+</div>
+</div>
+<!-- Live Metrics Ribbon -->
+<div class="grid grid-cols-2 lg:grid-cols-4 gap-space-md mt-space-xl">
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between text-outline">
+<span class="font-label-sm text-label-sm uppercase tracking-wider">Certified Vendors</span>
+<span class="material-symbols-outlined text-primary text-lg">store</span>
+</div>
+<div class="mt-space-sm">
+<span class="font-display-xl-mobile text-display-xl-mobile font-extrabold text-on-background">124</span>
+<span class="font-label-md text-label-md text-primary font-semibold ml-1">ร้าน</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">ร้านอาหารที่ผ่านการรับรองสุขอนามัย สจล.</p>
+</div>
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between text-outline">
+<span class="font-label-sm text-label-sm uppercase tracking-wider">Active EV Shuttles</span>
+<span class="material-symbols-outlined text-tertiary text-lg">electric_bolt</span>
+</div>
+<div class="mt-space-sm">
+<span class="font-display-xl-mobile text-display-xl-mobile font-extrabold text-on-background">6</span>
+<span class="font-label-md text-label-md text-tertiary font-semibold ml-1">เส้นทางหลัก</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">เครือข่ายรถ EV ฟรีสำหรับบุคลากร &amp; นศ.</p>
+</div>
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between text-outline">
+<span class="font-label-sm text-label-sm uppercase tracking-wider">Verified Reviews</span>
+<span class="material-symbols-outlined text-secondary text-lg">rate_review</span>
+</div>
+<div class="mt-space-sm">
+<span class="font-display-xl-mobile text-display-xl-mobile font-extrabold text-on-background">4,890+</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">รีวิวจากนักศึกษา &amp; บุคลากร สจล. จริง</p>
+</div>
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between text-outline">
+<span class="font-label-sm text-label-sm uppercase tracking-wider">Transit Reliability</span>
+<span class="material-symbols-outlined text-primary-container text-lg">schedule</span>
+</div>
+<div class="mt-space-sm">
+<span class="font-display-xl-mobile text-display-xl-mobile font-extrabold text-on-background">99.98%</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">อัตราตรงต่อเวลาของรอบรถรับส่งวิทยาเขต</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 1: Featured Dining Spots -->
+<section class="w-full py-space-xl bg-surface px-gutter-desktop">
+<div class="max-w-[1280px] mx-auto">
+<!-- Section Header -->
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-sm mb-space-lg">
+<div>
+<div class="flex items-center gap-space-xs text-primary font-label-md text-label-md font-bold uppercase tracking-wider">
+<span class="material-symbols-outlined text-base">recommend</span>
+            Weekly Campus Picks
+          </div>
+<h2 class="font-headline-lg text-headline-lg text-on-background mt-1">
+            ร้านอาหารแนะนำประจำสัปดาห์
+          </h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1">
+            คัดเลือกจากสถิติคะแนนความพึงพอใจสูงสุด ความสะอาด และความเร็วในการรอคิวรอบมื้อเที่ยง
+          </p>
+</div>
+<a class="inline-flex items-center gap-space-xs font-label-lg text-label-lg text-primary hover:text-primary-container transition-colors" href="#">
+<span>ดูทำเนียบร้านทั้งหมด (124 ร้าน)</span>
+<span class="material-symbols-outlined text-base">arrow_forward</span>
+</a>
+</div>
+<!-- Food Cards Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-md">
+<!-- Spot 1 -->
+<article class="group bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col">
+<div class="relative h-48 w-full bg-surface-container overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Authentic Thai cooked-to-order meal featuring aromatic basil minced pork with crispy fried egg served on white ceramic plate, bustling university engineering canteen background with soft warm indoor cafeteria lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC9iglfTsJ5xF6f37SqlhtgZc2oJNQVzWbxxzlPucQqMLo7VCdvfb5P9_tsthfEvV1kXmk3TQIqBrvknRYEtTHDq810Xs3N4ZrNSq05QG2q8dwPedQGEcvEQcNK_urBexcV2HyrH3ZqQetbSBfDZdud5JvJBDqB6t5IUuJmCl-MsB7hgzrb2_jpOMCy6n5xxuNZkms7fgnqw6FjiuqJ-e-mkGjeeJwBvYq4-3j5cpwVRPhpfdpL2eus6w"/>
+<div class="absolute top-3 left-3 flex flex-wrap gap-1">
+<span class="px-space-xs py-0.5 rounded-full bg-surface-container-lowest/90 backdrop-blur-sm font-label-sm text-label-sm text-on-surface font-semibold flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-tertiary"></span>
+                เปิดบริการ
+              </span>
+</div>
+<div class="absolute top-3 right-3">
+<span class="px-space-xs py-0.5 rounded bg-primary text-on-primary font-label-sm text-label-sm font-bold">
+                อันดับ 1 ประจำสัปดาห์
+              </span>
+</div>
+</div>
+<div class="p-space-md flex-1 flex flex-col justify-between">
+<div>
+<div class="flex items-center gap-1 text-primary">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-label-lg text-label-lg font-bold">4.9</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">(420 รีวิว)</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mt-space-xs group-hover:text-primary transition-colors">
+                ครัวป้าศรี วิศวะ สจล.
+              </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1 line-clamp-2">
+                อาหารตามสั่งยอดนิยมหน้าตึก A เมนูกะเพราหมูกรอบไข่ดาวเยิ้ม และต้มยำกุ้งน้ำข้นสูตรเด็กช่าง
+              </p>
+</div>
+<div class="mt-space-md pt-space-sm space-y-space-xs bg-surface-container-low/50 p-space-xs rounded-lg">
+<div class="flex items-center justify-between font-label-sm text-label-sm">
+<span class="text-outline flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">location_on</span>
+                  ตึก A วิศวกรรมศาสตร์
+                </span>
+<span class="font-semibold text-on-surface">120 ม. (เดิน 2 นาที)</span>
+</div>
+<div class="flex items-center justify-between font-label-sm text-label-sm">
+<span class="text-outline flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">group</span>
+                  ความหนาแน่นคิว:
+                </span>
+<span class="px-space-xs py-0.5 rounded bg-error-container text-on-error-container font-semibold">
+                  Busy (15-20 นาที)
+                </span>
+</div>
+</div>
+</div>
+</article>
+<!-- Spot 2 -->
+<article class="group bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col">
+<div class="relative h-48 w-full bg-surface-container overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Modern university library cafe scene with iced matcha latte and fresh drip coffee on wooden study desk, blurred background of students studying with laptops in bright minimalist architectural interior." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDp-N-S3PwpkDtSmmfgmu6k8DfiJNriBy2g-8oVBDxN6YsoI2UqUE2_7C9wftT5Oa0-L6s4S6LCaAOqV0jbNO4QPxMaaV8SHB58N-DSQeGEIqNgAeMWh-aUSmrf4GEz3TQM4GJ_iOaBiYGSuHb2YC2H1Ak49TPdduwHtQ7K5c3hSR6wKcu0qrHo3B70poXR0_1jzISo8wzMXeeNvTNAmfgT46waEre98Mms8-2viNB4Ad-VMIT2zllWNA"/>
+<div class="absolute top-3 left-3">
+<span class="px-space-xs py-0.5 rounded-full bg-surface-container-lowest/90 backdrop-blur-sm font-label-sm text-label-sm text-on-surface font-semibold flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-tertiary"></span>
+                เปิดบริการ
+              </span>
+</div>
+</div>
+<div class="p-space-md flex-1 flex flex-col justify-between">
+<div>
+<div class="flex items-center gap-1 text-primary">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-label-lg text-label-lg font-bold">4.7</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">(310 รีวิว)</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mt-space-xs group-hover:text-primary transition-colors">
+                Cafe Amazon สาขาหอสมุดกลาง KMITL
+              </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1 line-clamp-2">
+                กาแฟ เครื่องดื่มเย็น และพื้นที่อ่านหนังสือเงียบสงบ แอร์เย็นฉ่ำพร้อมปลั๊กชาร์จไฟ
+              </p>
+</div>
+<div class="mt-space-md pt-space-sm space-y-space-xs bg-surface-container-low/50 p-space-xs rounded-lg">
+<div class="flex items-center justify-between font-label-sm text-label-sm">
+<span class="text-outline flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">location_on</span>
+                  สำนักหอสมุดกลาง ชั้น 1
+                </span>
+<span class="font-semibold text-on-surface">350 ม. (เดิน 4 นาที)</span>
+</div>
+<div class="flex items-center justify-between font-label-sm text-label-sm">
+<span class="text-outline flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">group</span>
+                  ความหนาแน่นคิว:
+                </span>
+<span class="px-space-xs py-0.5 rounded bg-secondary-container text-on-secondary-container font-semibold">
+                  Moderate (5-10 นาที)
+                </span>
+</div>
+</div>
+</div>
+</article>
+<!-- Spot 3 -->
+<article class="group bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col">
+<div class="relative h-48 w-full bg-surface-container overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Savory Thai boat noodle bowl with rich dark broth, sliced tender beef, fresh morning glory, and crispy pork cracklings, steam rising gently under bright cafeteria lights in a high-energy dining hall." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBFuWKp4ceCecLm1jA1Ekwv-CJAO4U1I3gYirtsmZxoMhibL_sq7tlntUQ3SPc3U2AOn2iAab9Yxwz9_eP4JFh8yiq3r9xJYYYUBJ8LWSbzdLaOTxnKe_xwpMORJ5ZQj3dDRQzJVplzn1ievPPJDnWHg5yPDOo9USITypOSGT7fg50GVAzwydeTA6WjbpuZg5gtsxSkCjlZVaouzRw0wWlzT5Z2Upzb0j-mAr2xh5CnDIh0cVZm1vkXpA"/>
+<div class="absolute top-3 left-3">
+<span class="px-space-xs py-0.5 rounded-full bg-surface-container-lowest/90 backdrop-blur-sm font-label-sm text-label-sm text-on-surface font-semibold flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-tertiary"></span>
+                เปิดบริการ
+              </span>
+</div>
+<div class="absolute top-3 right-3">
+<span class="px-space-xs py-0.5 rounded bg-tertiary-container text-on-tertiary-container font-label-sm text-label-sm font-bold">
+                งบประหยัด
+              </span>
+</div>
+</div>
+<div class="p-space-md flex-1 flex flex-col justify-between">
+<div>
+<div class="flex items-center gap-1 text-primary">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-label-lg text-label-lg font-bold">4.8</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">(540 รีวิว)</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mt-space-xs group-hover:text-primary transition-colors">
+                ก๋วยเตี๋ยวเรืออยุธยา โรงอาหารพระเทพ
+              </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1 line-clamp-2">
+                สูตรเด็ดราคาประหยัด น้ำซุปเข้มข้นจัดจ้าน เริ่มต้นเพียง 35 บาท อิ่มคุ้มเร็วทันใจ
+              </p>
+</div>
+<div class="mt-space-md pt-space-sm space-y-space-xs bg-surface-container-low/50 p-space-xs rounded-lg">
+<div class="flex items-center justify-between font-label-sm text-label-sm">
+<span class="text-outline flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">location_on</span>
+                  โรงอาหารสมเด็จพระเทพฯ ล็อค 8
+                </span>
+<span class="font-semibold text-on-surface">500 ม. (เดิน 6 นาที)</span>
+</div>
+<div class="flex items-center justify-between font-label-sm text-label-sm">
+<span class="text-outline flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">group</span>
+                  ความหนาแน่นคิว:
+                </span>
+<span class="px-space-xs py-0.5 rounded bg-primary-fixed text-on-primary-fixed font-semibold">
+                  Low (&lt; 5 นาที)
+                </span>
+</div>
+</div>
+</div>
+</article>
+<!-- Spot 4 -->
+<article class="group bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col">
+<div class="relative h-48 w-full bg-surface-container overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Gourmet Hainanese chicken rice plate with succulent sliced steamed chicken breast, fragrant seasoned jasmine rice, cucumber garnishes, and spicy ginger chili dipping sauce on clean minimalist tableware." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCsu3bmpI4pMLJCVfh_mCXoTS9wGcQ4rROhlCkqg7BBXrYpMAEW2pSBO4KqYwodkl3xN1I6gFRksvRCyiCSQ1J-xSlbOhtDHJ0dA0PqTdZaqvxHK5RI8nDQhINVuA5mW41uFNMofUZabkTb7mkOzhrOd31mYQhpDKTv5pDytlA3o7yphV593ywZi_ig_etjLjq_e827cTM_YF0DHHGXr_epGvjaR0_llW6rNFg6r8Gj6sxKpt86ffbaqg"/>
+<div class="absolute top-3 left-3">
+<span class="px-space-xs py-0.5 rounded-full bg-surface-container-lowest/90 backdrop-blur-sm font-label-sm text-label-sm text-on-surface font-semibold flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-tertiary"></span>
+                เปิดบริการ
+              </span>
+</div>
+</div>
+<div class="p-space-md flex-1 flex flex-col justify-between">
+<div>
+<div class="flex items-center gap-1 text-primary">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-label-lg text-label-lg font-bold">4.6</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">(290 รีวิว)</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mt-space-xs group-hover:text-primary transition-colors">
+                ข้าวมันไก่สิงคโปร์ ตึกเจ้าคุณทหาร
+              </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1 line-clamp-2">
+                ไก่ต้มเนื้อนุ่มฉ่ำน้ำมันงา น้ำจิ้มเต้าเจี้ยวสูตรเด็ด พร้อมน้ำซุปกระดูกไก่ร้อนฟรี
+              </p>
+</div>
+<div class="mt-space-md pt-space-sm space-y-space-xs bg-surface-container-low/50 p-space-xs rounded-lg">
+<div class="flex items-center justify-between font-label-sm text-label-sm">
+<span class="text-outline flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">location_on</span>
+                  ศูนย์อาหารอาคารพระจอมเกล้า
+                </span>
+<span class="font-semibold text-on-surface">650 ม. (EV สาย 3 จอดหน้าตึก)</span>
+</div>
+<div class="flex items-center justify-between font-label-sm text-label-sm">
+<span class="text-outline flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">group</span>
+                  ความหนาแน่นคิว:
+                </span>
+<span class="px-space-xs py-0.5 rounded bg-secondary-container text-on-secondary-container font-semibold">
+                  Moderate (8 นาที)
+                </span>
+</div>
+</div>
+</div>
+</article>
+</div>
+</div>
+</section>
+<!-- Section 2: Live Shuttle Tracker Preview -->
+<section class="w-full py-space-xl bg-surface-container-low px-gutter-desktop">
+<div class="max-w-[1280px] mx-auto">
+<div class="flex flex-col lg:flex-row lg:items-end justify-between gap-space-md mb-space-lg">
+<div>
+<div class="inline-flex items-center gap-space-xs px-space-sm py-1 rounded bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm font-bold uppercase tracking-wider mb-2">
+<span class="material-symbols-outlined text-sm">satellite_alt</span>
+            Live GPS Telemetry
+          </div>
+<h2 class="font-headline-lg text-headline-lg text-on-background">
+            ระบบติดตามรถบริการรับส่ง EV ภายในวิทยาเขต
+          </h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1 max-w-2xl">
+            สถานะตำแหน่งรถชานชาลาแบบเรียลไทม์ ตรวจสอบความถี่และจุดขึ้นรถเพื่อวางแผนการเดินทางใน สจล. ได้แม่นยำ
+          </p>
+</div>
+<div class="flex items-center gap-space-sm">
+<div class="flex items-center gap-space-xs font-label-sm text-label-sm bg-surface-container-lowest px-space-sm py-2 rounded-lg shadow-sm">
+<span class="w-2.5 h-2.5 rounded-full bg-tertiary"></span>
+<span class="text-on-surface">กำลังวิ่ง (En Route)</span>
+</div>
+<div class="flex items-center gap-space-xs font-label-sm text-label-sm bg-surface-container-lowest px-space-sm py-2 rounded-lg shadow-sm">
+<span class="w-2.5 h-2.5 rounded-full bg-primary-container"></span>
+<span class="text-on-surface">รอออกตามรอบ (Standby)</span>
+</div>
+</div>
+</div>
+<!-- Route Cards Split Grid -->
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-space-md">
+<!-- Route 1 (Red) -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="px-space-sm py-1 rounded bg-primary text-on-primary font-label-md text-label-md font-bold">
+                  สาย 1 (สีแดง)
+                </span>
+<span class="flex items-center gap-1 font-label-sm text-label-sm text-tertiary font-medium">
+<span class="w-2 h-2 rounded-full bg-tertiary animate-ping"></span>
+                  วิ่งปกติ 4 คัน
+                </span>
+</div>
+<span class="font-label-sm text-label-sm text-outline">EV-01, 04, 07</span>
+</div>
+<div class="mt-space-md">
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">
+                สจล. ประตู 1 — คณะวิศวกรรมศาสตร์
+              </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+                เส้นทางหลักเชื่อมต่อสถานีรถไฟลอยฟ้าและคณะแกนกลางฝั่งเหนือ
+              </p>
+</div>
+<!-- Stop Timeline -->
+<div class="mt-space-md space-y-space-sm pl-2">
+<div class="flex items-start gap-space-sm relative">
+<div class="w-3 h-3 rounded-full bg-primary mt-1 flex-shrink-0"></div>
+<div>
+<div class="font-label-md text-label-md text-on-surface font-semibold">สจล. ประตู 1 (ถนนฉลองกรุง)</div>
+<div class="font-body-sm text-body-sm text-primary font-medium">ออกทุก 7 นาที</div>
+</div>
+</div>
+<div class="w-0.5 h-6 bg-surface-variant ml-1.5"></div>
+<div class="flex items-start gap-space-sm relative">
+<div class="w-3 h-3 rounded-full bg-tertiary mt-1 flex-shrink-0 animate-pulse"></div>
+<div>
+<div class="font-label-md text-label-md text-on-surface font-semibold">สถานีรถไฟพระจอมเกล้า (จุดเชื่อมต่อหลัก)</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">รถคันที่ 2 กำลังเข้าเทียบ (1 นาที)</div>
+</div>
+</div>
+<div class="w-0.5 h-6 bg-surface-variant ml-1.5"></div>
+<div class="flex items-start gap-space-sm relative">
+<div class="w-3 h-3 rounded-full bg-outline-variant mt-1 flex-shrink-0"></div>
+<div>
+<div class="font-label-md text-label-md text-on-surface font-semibold">คณะวิศวกรรมศาสตร์ (ตึก 12 ชั้น)</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">จุดจอดปลายทาง</div>
+</div>
+</div>
+</div>
+</div>
+<div class="mt-space-md pt-space-sm bg-surface-container-low p-space-sm rounded-lg flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant">ความเร็วเฉลี่ย: 25 km/h</span>
+<span class="font-label-sm text-label-sm font-semibold text-primary">รอบถัดไป 12:45 น.</span>
+</div>
+</div>
+<!-- Route 2 (Green) -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="px-space-sm py-1 rounded bg-tertiary-container text-on-tertiary-container font-label-md text-label-md font-bold">
+                  สาย 2 (สีเขียว)
+                </span>
+<span class="flex items-center gap-1 font-label-sm text-label-sm text-tertiary font-medium">
+<span class="w-2 h-2 rounded-full bg-tertiary animate-ping"></span>
+                  วิ่งปกติ 3 คัน
+                </span>
+</div>
+<span class="font-label-sm text-label-sm text-outline">EV-02, 05</span>
+</div>
+<div class="mt-space-md">
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">
+                หอใน สจล. — คณะสถาปัตยกรรมศาสตร์
+              </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+                เชื่อมต่อหอพักนักศึกษา โรงอาหารพระเทพ และคณะสายดีไซน์
+              </p>
+</div>
+<!-- Stop Timeline -->
+<div class="mt-space-md space-y-space-sm pl-2">
+<div class="flex items-start gap-space-sm relative">
+<div class="w-3 h-3 rounded-full bg-tertiary mt-1 flex-shrink-0"></div>
+<div>
+<div class="font-label-md text-label-md text-on-surface font-semibold">อาคารหอพักนักศึกษา สจล.</div>
+<div class="font-body-sm text-body-sm text-tertiary font-medium">ออกทุก 10 นาที</div>
+</div>
+</div>
+<div class="w-0.5 h-6 bg-surface-variant ml-1.5"></div>
+<div class="flex items-start gap-space-sm relative">
+<div class="w-3 h-3 rounded-full bg-primary-container mt-1 flex-shrink-0"></div>
+<div>
+<div class="font-label-md text-label-md text-on-surface font-semibold">โรงอาหารพระเทพฯ (Canteen Central)</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">รถคันที่ 1 จอดรับผู้โดยสาร (Standby)</div>
+</div>
+</div>
+<div class="w-0.5 h-6 bg-surface-variant ml-1.5"></div>
+<div class="flex items-start gap-space-sm relative">
+<div class="w-3 h-3 rounded-full bg-outline-variant mt-1 flex-shrink-0"></div>
+<div>
+<div class="font-label-md text-label-md text-on-surface font-semibold">คณะสถาปัตยกรรม ศิลปะและการออกแบบ</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">จุดจอดปลายทาง</div>
+</div>
+</div>
+</div>
+</div>
+<div class="mt-space-md pt-space-sm bg-surface-container-low p-space-sm rounded-lg flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant">ความเร็วเฉลี่ย: 22 km/h</span>
+<span class="font-label-sm text-label-sm font-semibold text-tertiary">รอบถัดไป 12:48 น.</span>
+</div>
+</div>
+<!-- Route 3 (Blue) -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="px-space-sm py-1 rounded bg-secondary text-on-secondary font-label-md text-label-md font-bold">
+                  สาย 3 (สีน้ำเงิน)
+                </span>
+<span class="flex items-center gap-1 font-label-sm text-label-sm text-primary-container font-medium">
+<span class="w-2 h-2 rounded-full bg-primary-container"></span>
+                  รอรอบออก 2 คัน
+                </span>
+</div>
+<span class="font-label-sm text-label-sm text-outline">EV-03, 08</span>
+</div>
+<div class="mt-space-md">
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">
+                ตึกเจ้าคุณทหาร — แอร์พอร์ตลิงก์ ลาดกระบัง
+              </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+                สายเชื่อมต่อการเดินทางข้ามเมืองตรงสู่ระบบราง ARL และสำนักหอสมุด
+              </p>
+</div>
+<!-- Stop Timeline -->
+<div class="mt-space-md space-y-space-sm pl-2">
+<div class="flex items-start gap-space-sm relative">
+<div class="w-3 h-3 rounded-full bg-secondary mt-1 flex-shrink-0"></div>
+<div>
+<div class="font-label-md text-label-md text-on-surface font-semibold">อาคารเจ้าคุณทหาร (สำนักงานอธิการบดี)</div>
+<div class="font-body-sm text-body-sm text-secondary font-medium">ออกทุก 15 นาที</div>
+</div>
+</div>
+<div class="w-0.5 h-6 bg-surface-variant ml-1.5"></div>
+<div class="flex items-start gap-space-sm relative">
+<div class="w-3 h-3 rounded-full bg-outline-variant mt-1 flex-shrink-0"></div>
+<div>
+<div class="font-label-md text-label-md text-on-surface font-semibold">สำนักหอสมุดกลาง KMITL</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">จุดแวะกลางทาง</div>
+</div>
+</div>
+<div class="w-0.5 h-6 bg-surface-variant ml-1.5"></div>
+<div class="flex items-start gap-space-sm relative">
+<div class="w-3 h-3 rounded-full bg-outline-variant mt-1 flex-shrink-0"></div>
+<div>
+<div class="font-label-md text-label-md text-on-surface font-semibold">สถานีรถไฟฟ้าแอร์พอร์ต เรล ลิงก์ ลาดกระบัง</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">จุดจอดปลายทางภายนอก</div>
+</div>
+</div>
+</div>
+</div>
+<div class="mt-space-md pt-space-sm bg-surface-container-low p-space-sm rounded-lg flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant">ความเร็วเฉลี่ย: 32 km/h</span>
+<span class="font-label-sm text-label-sm font-semibold text-secondary">รอบถัดไป 12:55 น.</span>
+</div>
+</div>
+</div>
+<!-- Live GPS Static Mock Map & Direct CTA -->
+<div class="mt-space-lg bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col md:flex-row items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-md">
+<div class="w-12 h-12 rounded-lg bg-primary-fixed flex items-center justify-center flex-shrink-0 text-primary">
+<span class="material-symbols-outlined text-2xl">map</span>
+</div>
+<div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface">ต้องการดูพิกัดรถสดผ่านแผนที่ดาวเทียม?</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              ระบบเชื่อมต่อผ่าน KMITL IoT Telematics API พิกัดตำแหน่งรถ EV ทุกคันจะถูกพลอตสดบนแผนที่วิทยาเขต
+            </p>
+</div>
+</div>
+<a class="flex-shrink-0 px-space-lg py-3 rounded-lg bg-primary hover:bg-primary-container text-on-primary font-label-lg text-label-lg flex items-center gap-space-xs shadow-md transition-all whitespace-nowrap" href="/about">
+<span>ดูเส้นทาง &amp; ติดตามตำแหน่งสดผ่าน Google Maps</span>
+<span class="material-symbols-outlined text-base">near_me</span>
+</a>
+</div>
+</div>
+</section>
+<!-- Section 3: Enterprise Trust Badges & Standards -->
+<section class="w-full py-space-xl bg-surface px-gutter-desktop">
+<div class="max-w-[1280px] mx-auto">
+<div class="text-center max-w-2xl mx-auto mb-space-lg">
+<span class="px-space-sm py-1 rounded bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-semibold uppercase tracking-wider">
+          Enterprise Security Architecture
+        </span>
+<h2 class="font-headline-lg text-headline-lg text-on-background mt-space-xs">
+          ความปลอดภัย &amp; มาตรฐานระบบ สจล.
+        </h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1">
+          โครงสร้างเทคโนโลยีระดับ Enterprise เพื่อความปลอดภัยของข้อมูลนักศึกษา บุคลากร และผู้ใช้งานทั่วไป
+        </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md">
+<!-- Badge 1: Zero Trust -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between">
+<div>
+<div class="w-10 h-10 rounded-lg bg-primary-fixed flex items-center justify-center text-primary mb-space-md">
+<span class="material-symbols-outlined text-xl">security</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">
+              Zero Trust Authentication
+            </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-space-xs leading-relaxed">
+              การยืนยันตัวตนแบบ Zero Trust ด้วย KMITL Single Sign-On (SSO) คัดกรองและตรวจสอบสิทธิ์ตามระดับ (Role-Based Access Control) ปกป้องข้อมูลส่วนบุคคลตาม พ.ร.บ. คุ้มครองข้อมูลส่วนบุคคล (PDPA) อย่างเคร่งครัด
+            </p>
+</div>
+<div class="mt-space-md pt-space-xs flex items-center gap-1 font-label-sm text-label-sm text-primary font-semibold">
+<span class="material-symbols-outlined text-sm">verified</span>
+<span>OWASP Top 10 Compliant</span>
+</div>
+</div>
+<!-- Badge 2: AI Profanity Pre-validation -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between">
+<div>
+<div class="w-10 h-10 rounded-lg bg-secondary-fixed flex items-center justify-center text-secondary mb-space-md">
+<span class="material-symbols-outlined text-xl">filter_vintage</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">
+              Profanity Pre-validation Filter
+            </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-space-xs leading-relaxed">
+              ระบบกรองและตรวจสอบเนื้อหารีวิวล่วงหน้าด้วยโมเดลวิเคราะห์ภาษาไทย ป้องกันคำหยาบคาย การกลั่นแกล้ง และเนื้อหาไม่เหมาะสม สร้างสภาพแวดล้อมดิจิทัลที่สร้างสรรค์และปลอดภัยสำหรับนักศึกษาทุกคณะ
+            </p>
+</div>
+<div class="mt-space-md pt-space-xs flex items-center gap-1 font-label-sm text-label-sm text-secondary font-semibold">
+<span class="material-symbols-outlined text-sm">auto_awesome</span>
+<span>Real-time Semantic Sanitizer</span>
+</div>
+</div>
+<!-- Badge 3: Super Admin Oversight -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between">
+<div>
+<div class="w-10 h-10 rounded-lg bg-tertiary-fixed flex items-center justify-center text-tertiary mb-space-md">
+<span class="material-symbols-outlined text-xl">admin_panel_settings</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">
+              Super Admin Oversight
+            </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-space-xs leading-relaxed">
+              การควบคุมดูแลข้อมูลแบบรวมศูนย์โดยวิศวกรระบบและผู้ดูแลระดับสูง ตรวจสอบประวัติการแก้ไขและพิกัดเส้นทางอย่างโปร่งใส พร้อมระบบแจ้งเตือนเหตุฉุกเฉินวิทยาเขตทันที 24 ชั่วโมง
+            </p>
+</div>
+<div class="mt-space-md pt-space-xs flex items-center gap-1 font-label-sm text-label-sm text-outline font-semibold">
+<span class="material-symbols-outlined text-sm">account_circle</span>
+<span class="truncate max-w-[220px]">kunsubphiwichit@gmail.com</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Community Contribution CTA Banner -->
+<section class="w-full bg-gradient-to-r from-primary to-primary-container text-on-primary py-space-xl px-gutter-desktop">
+<div class="max-w-[1280px] mx-auto flex flex-col md:flex-row items-center justify-between gap-space-lg">
+<div class="max-w-2xl">
+<span class="px-space-xs py-0.5 rounded bg-surface-container-lowest/20 font-label-sm text-label-sm uppercase tracking-wider font-semibold">
+          KMITL Foodie Community
+        </span>
+<h2 class="font-headline-lg text-headline-lg text-on-primary mt-space-xs">
+          พบร้านอาหารอร่อยเปิดใหม่รอบสถาบัน?
+        </h2>
+<p class="font-body-md text-body-md text-on-primary-container mt-1">
+          ร่วมเป็นส่วนหนึ่งในการพัฒนาฐานข้อมูลดิจิทัล สจล. แนะนำร้านเด็ด ซุ้มเครื่องดื่ม หรือแจ้งปรับปรุงเวลารอบรถบริการ EV เพื่อเพื่อนชาวพระจอมเกล้าทุกคน
+        </p>
+</div>
+<div class="flex flex-wrap items-center gap-space-sm flex-shrink-0">
+<a class="px-space-lg py-3 rounded-lg bg-surface-container-lowest hover:bg-surface text-primary font-label-lg text-label-lg flex items-center gap-space-xs shadow-md transition-all" href="#">
+<span class="material-symbols-outlined text-base">add_circle</span>
+<span>ส่งข้อมูลร้านใหม่</span>
+</a>
+<a class="px-space-md py-3 rounded-lg bg-surface-container-lowest/10 hover:bg-surface-container-lowest/20 text-on-primary font-label-md text-label-md flex items-center gap-space-xs transition-colors" href="#">
+<span class="material-symbols-outlined text-base">help</span>
+<span>แจ้งปัญหาระบบ</span>
+</a>
+</div>
+</div>
+</section>
+<script>
+    function switchSearchTab(mode) {
+      const btnFood = document.getElementById('tab-food');
+      const btnTransit = document.getElementById('tab-transit');
+      const input = document.getElementById('main-search-input');
+
+      if (!btnFood || !btnTransit || !input) return;
+
+      if (mode === 'food') {
+        btnFood.className = 'search-tab-btn flex items-center gap-space-xs px-space-md py-2 rounded-lg bg-primary text-on-primary font-label-md text-label-md transition-all shadow-sm';
+        btnTransit.className = 'search-tab-btn flex items-center gap-space-xs px-space-md py-2 rounded-lg bg-surface-container-low text-on-surface-variant font-label-md text-label-md hover:bg-surface-container transition-all';
+        input.placeholder = 'พิมพ์ชื่อร้าน, เมนูยอดนิยม, ตึกคณะ (เช่น วิศวะ ตึก A, โรงอาหารพระเทพ)...';
+      } else {
+        btnTransit.className = 'search-tab-btn flex items-center gap-space-xs px-space-md py-2 rounded-lg bg-primary text-on-primary font-label-md text-label-md transition-all shadow-sm';
+        btnFood.className = 'search-tab-btn flex items-center gap-space-xs px-space-md py-2 rounded-lg bg-surface-container-low text-on-surface-variant font-label-md text-label-md hover:bg-surface-container transition-all';
+        input.placeholder = 'พิมพ์ชื่อป้ายหยุดรถ EV, หมายเลขสาย (สาย 1, 2, 3) หรือสถานีปลายทาง...';
+      }
+    }
+  </script>
+</div></main><footer class="w-full bg-surface-container-low py-space-xl shadow-[0_-1px_4px_rgba(0,0,0,0.02)]"><div class="w-full px-gutter-desktop max-w-[1280px] mx-auto flex flex-col md:flex-row items-center justify-between gap-space-md text-center md:text-left"><div class="flex flex-col gap-space-xs"><div class="flex items-center justify-center md:justify-start gap-space-xs"><span class="material-symbols-outlined text-base text-primary">verified_user</span><span class="font-label-md text-label-md text-on-surface">KMITL Food &amp; Transport Hub Enterprise Edition</span></div><p class="font-body-sm text-body-sm text-on-surface-variant">OWASP Top 10 Compliant • Zero Trust Architecture • PDPA &amp; Cyber Security Act Ready</p></div><div class="flex items-center gap-space-lg"><a class="font-label-sm text-label-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="api-documentation" href="#">API Documentation</a><span class="text-outline-variant">•</span><a class="font-label-sm text-label-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="campus-security-protocols" href="#">Campus Security Protocols</a><span class="text-outline-variant">•</span><a class="font-label-sm text-label-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="system-telemetry" href="#">System Telemetry</a></div></div></footer></body></html>
